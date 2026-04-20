@@ -1,0 +1,122 @@
+<!-- Neighborhoods V2: PRISTINE — Clean map + list layout -->
+<!-- wp:template-part {"slug":"header-v2","tagName":"header"} /-->
+<!-- wp:group {"tagName":"main","style":{"color":{"background":"#FFFFFF"},"spacing":{"padding":{"top":"0","bottom":"0"}}},"layout":{"type":"default"}} -->
+<main class="wp-block-group" style="background:#FFFFFF">
+
+  <!-- Header -->
+  <!-- wp:group {"style":{"color":{"background":"#FAF7F2"},"spacing":{"padding":{"top":"4rem","bottom":"4rem"}},"border":{"bottom":{"color":"#E5E7EB","style":"solid","width":"1px"}}},"layout":{"type":"constrained"}} -->
+  <div class="wp-block-group" style="background:#FAF7F2;padding-top:4rem;padding-bottom:4rem;border-bottom:1px solid #E5E7EB;text-align:center">
+    <p style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.2em;color:#C9A84C;margin-bottom:0.75rem">Discover Miami</p>
+    <h1 style="font-family:var(--wp--preset--font-family--playfair);font-weight:700;font-size:clamp(2.5rem,5vw,3.75rem);color:#0A1628;letter-spacing:-0.03em;margin-bottom:1rem">Explore Neighborhoods</h1>
+    <p style="font-size:1rem;color:#6B7280;max-width:500px;margin:0 auto">Each of Miami's neighborhoods offers a distinct lifestyle. Find the one that fits yours.</p>
+  </div>
+  <!-- /wp:group -->
+
+  <!-- Map + Neighborhood list -->
+  <!-- wp:group {"style":{"color":{"background":"#FFFFFF"},"spacing":{"padding":{"top":"0","bottom":"0"}}},"layout":{"type":"default"}} -->
+  <div class="wp-block-group" style="display:grid;grid-template-columns:1fr 420px">
+
+    <!-- Map -->
+    <div style="background:#F3F4F6;min-height:600px;display:flex;align-items:center;justify-content:center;position:sticky;top:0;align-self:start;height:100vh">
+      <div style="text-align:center">
+        <p style="font-size:0.875rem;color:#9CA3AF;margin-bottom:0.5rem">Interactive Map</p>
+        <p style="font-size:0.78rem;color:#D1D5DB">Miami Metro Area</p>
+        <!-- Neighborhood pins placeholder -->
+        <div style="position:relative;width:300px;height:300px;margin:2rem auto 0">
+          <div style="position:absolute;top:20%;left:45%;width:10px;height:10px;background:#C9A84C;border-radius:50%;border:2px solid #FFFFFF;box-shadow:0 2px 8px rgba(0,0,0,0.2)"></div>
+          <div style="position:absolute;top:30%;left:60%;width:10px;height:10px;background:#C9A84C;border-radius:50%;border:2px solid #FFFFFF;box-shadow:0 2px 8px rgba(0,0,0,0.2)"></div>
+          <div style="position:absolute;top:50%;left:40%;width:10px;height:10px;background:#C9A84C;border-radius:50%;border:2px solid #FFFFFF;box-shadow:0 2px 8px rgba(0,0,0,0.2)"></div>
+          <div style="position:absolute;top:55%;left:55%;width:10px;height:10px;background:#C9A84C;border-radius:50%;border:2px solid #FFFFFF;box-shadow:0 2px 8px rgba(0,0,0,0.2)"></div>
+          <div style="position:absolute;top:70%;left:42%;width:10px;height:10px;background:#C9A84C;border-radius:50%;border:2px solid #FFFFFF;box-shadow:0 2px 8px rgba(0,0,0,0.2)"></div>
+          <div style="position:absolute;top:65%;left:62%;width:10px;height:10px;background:#C9A84C;border-radius:50%;border:2px solid #FFFFFF;box-shadow:0 2px 8px rgba(0,0,0,0.2)"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Neighborhood list -->
+    <div style="border-left:1px solid #E5E7EB">
+      <a href="/neighborhoods/coral-gables" style="text-decoration:none;display:block;padding:2rem;border-bottom:1px solid #F3F4F6;transition:background 0.2s">
+        <div style="display:grid;grid-template-columns:72px 1fr;gap:1.25rem;align-items:center">
+          <div style="width:72px;height:72px;background:linear-gradient(135deg,#1E3A5F,#050D1A);border-radius:8px"></div>
+          <div>
+            <h3 style="font-family:var(--wp--preset--font-family--playfair);font-size:1.05rem;font-weight:700;color:#0A1628;margin:0 0 0.25rem">Coral Gables</h3>
+            <p style="font-size:0.72rem;color:#C9A84C;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;margin:0 0 0.5rem">The City Beautiful</p>
+            <div style="display:flex;gap:1.25rem">
+              <span style="font-size:0.78rem;color:#9CA3AF">142 listings</span>
+              <span style="font-size:0.78rem;color:#9CA3AF">Avg $4.2M</span>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="/neighborhoods/miami-beach" style="text-decoration:none;display:block;padding:2rem;border-bottom:1px solid #F3F4F6;background:#FAF7F2">
+        <div style="display:grid;grid-template-columns:72px 1fr;gap:1.25rem;align-items:center">
+          <div style="width:72px;height:72px;background:linear-gradient(135deg,#2C5282,#1E3A5F);border-radius:8px"></div>
+          <div>
+            <h3 style="font-family:var(--wp--preset--font-family--playfair);font-size:1.05rem;font-weight:700;color:#0A1628;margin:0 0 0.25rem">Miami Beach</h3>
+            <p style="font-size:0.72rem;color:#C9A84C;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;margin:0 0 0.5rem">Waterfront Luxury</p>
+            <div style="display:flex;gap:1.25rem">
+              <span style="font-size:0.78rem;color:#9CA3AF">218 listings</span>
+              <span style="font-size:0.78rem;color:#9CA3AF">Avg $8.1M</span>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="/neighborhoods/coconut-grove" style="text-decoration:none;display:block;padding:2rem;border-bottom:1px solid #F3F4F6">
+        <div style="display:grid;grid-template-columns:72px 1fr;gap:1.25rem;align-items:center">
+          <div style="width:72px;height:72px;background:linear-gradient(135deg,#0E1F38,#2C5282);border-radius:8px"></div>
+          <div>
+            <h3 style="font-family:var(--wp--preset--font-family--playfair);font-size:1.05rem;font-weight:700;color:#0A1628;margin:0 0 0.25rem">Coconut Grove</h3>
+            <p style="font-size:0.72rem;color:#C9A84C;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;margin:0 0 0.5rem">The Bohemian Village</p>
+            <div style="display:flex;gap:1.25rem">
+              <span style="font-size:0.78rem;color:#9CA3AF">89 listings</span>
+              <span style="font-size:0.78rem;color:#9CA3AF">Avg $3.8M</span>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="/neighborhoods/brickell" style="text-decoration:none;display:block;padding:2rem;border-bottom:1px solid #F3F4F6">
+        <div style="display:grid;grid-template-columns:72px 1fr;gap:1.25rem;align-items:center">
+          <div style="width:72px;height:72px;background:linear-gradient(135deg,#1E3A5F,#3A6EA8);border-radius:8px"></div>
+          <div>
+            <h3 style="font-family:var(--wp--preset--font-family--playfair);font-size:1.05rem;font-weight:700;color:#0A1628;margin:0 0 0.25rem">Brickell</h3>
+            <p style="font-size:0.72rem;color:#C9A84C;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;margin:0 0 0.5rem">Miami's Manhattan</p>
+            <div style="display:flex;gap:1.25rem">
+              <span style="font-size:0.78rem;color:#9CA3AF">367 listings</span>
+              <span style="font-size:0.78rem;color:#9CA3AF">Avg $2.9M</span>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="/neighborhoods/pinecrest" style="text-decoration:none;display:block;padding:2rem;border-bottom:1px solid #F3F4F6">
+        <div style="display:grid;grid-template-columns:72px 1fr;gap:1.25rem;align-items:center">
+          <div style="width:72px;height:72px;background:linear-gradient(135deg,#112240,#1E3A5F);border-radius:8px"></div>
+          <div>
+            <h3 style="font-family:var(--wp--preset--font-family--playfair);font-size:1.05rem;font-weight:700;color:#0A1628;margin:0 0 0.25rem">Pinecrest</h3>
+            <p style="font-size:0.72rem;color:#C9A84C;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;margin:0 0 0.5rem">Estate Living</p>
+            <div style="display:flex;gap:1.25rem">
+              <span style="font-size:0.78rem;color:#9CA3AF">56 listings</span>
+              <span style="font-size:0.78rem;color:#9CA3AF">Avg $3.1M</span>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="/neighborhoods/edgewater" style="text-decoration:none;display:block;padding:2rem">
+        <div style="display:grid;grid-template-columns:72px 1fr;gap:1.25rem;align-items:center">
+          <div style="width:72px;height:72px;background:linear-gradient(135deg,#2C5282,#050D1A);border-radius:8px"></div>
+          <div>
+            <h3 style="font-family:var(--wp--preset--font-family--playfair);font-size:1.05rem;font-weight:700;color:#0A1628;margin:0 0 0.25rem">Edgewater</h3>
+            <p style="font-size:0.72rem;color:#C9A84C;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;margin:0 0 0.5rem">Urban Waterfront</p>
+            <div style="display:flex;gap:1.25rem">
+              <span style="font-size:0.78rem;color:#9CA3AF">203 listings</span>
+              <span style="font-size:0.78rem;color:#9CA3AF">Avg $1.8M</span>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <!-- /wp:group -->
+
+</main>
+<!-- /wp:group -->
+<!-- wp:template-part {"slug":"footer-v2","tagName":"footer"} /-->
