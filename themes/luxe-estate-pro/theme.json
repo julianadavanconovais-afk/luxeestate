@@ -1,0 +1,340 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"settings": {
+		"appearanceTools": true,
+		"useRootPaddingAwareAlignments": true,
+		"layout": {
+			"contentSize": "1200px",
+			"wideSize": "1440px"
+		},
+		"color": {
+			"defaultPalette": false,
+			"defaultGradients": false,
+			"palette": [
+				{ "slug": "navy-darkest",  "color": "#050D1A",   "name": "Navy Darkest" },
+				{ "slug": "navy-dark",     "color": "#0A1628",   "name": "Navy Dark" },
+				{ "slug": "navy",          "color": "#1E3A5F",   "name": "Navy" },
+				{ "slug": "navy-medium",   "color": "#2C5282",   "name": "Navy Medium" },
+				{ "slug": "navy-light",    "color": "#3A6EA8",   "name": "Navy Light" },
+				{ "slug": "navy-card",     "color": "#112240",   "name": "Navy Card" },
+				{ "slug": "navy-row",      "color": "#0E1F38",   "name": "Navy Row" },
+				{ "slug": "gold-dark",     "color": "#9B7D2B",   "name": "Gold Dark" },
+				{ "slug": "gold",          "color": "#C9A84C",   "name": "Gold" },
+				{ "slug": "gold-light",    "color": "#E6C97A",   "name": "Gold Light" },
+				{ "slug": "gold-pale",     "color": "#F5E8C0",   "name": "Gold Pale" },
+				{ "slug": "cream-dark",    "color": "#D4C4A8",   "name": "Cream Dark" },
+				{ "slug": "cream",         "color": "#F5F0E8",   "name": "Cream" },
+				{ "slug": "cream-light",   "color": "#FAF7F2",   "name": "Cream Light" },
+				{ "slug": "off-white",     "color": "#FEFEFE",   "name": "Off White" },
+				{ "slug": "charcoal",      "color": "#1A2332",   "name": "Charcoal" },
+				{ "slug": "gray-dark",     "color": "#374151",   "name": "Gray Dark" },
+				{ "slug": "gray",          "color": "#6B7280",   "name": "Gray" },
+				{ "slug": "gray-medium",   "color": "#9CA3AF",   "name": "Gray Medium" },
+				{ "slug": "gray-light",    "color": "#E5E7EB",   "name": "Gray Light" },
+				{ "slug": "gray-pale",     "color": "#F9FAFB",   "name": "Gray Pale" },
+				{ "slug": "black",         "color": "#0A0A0A",   "name": "Black" },
+				{ "slug": "black-card",    "color": "#111111",   "name": "Black Card" },
+				{ "slug": "white",         "color": "#FFFFFF",   "name": "White" },
+				{ "slug": "teal",          "color": "#0D9488",   "name": "Teal" },
+				{ "slug": "success",       "color": "#10B981",   "name": "Success Green" },
+				{ "slug": "warning",       "color": "#F59E0B",   "name": "Warning Amber" },
+				{ "slug": "error",         "color": "#EF4444",   "name": "Error Red" }
+			],
+			"gradients": [
+				{
+					"slug": "navy-gradient",
+					"gradient": "linear-gradient(135deg, #050D1A 0%, #1E3A5F 100%)",
+					"name": "Navy Gradient"
+				},
+				{
+					"slug": "navy-deep",
+					"gradient": "linear-gradient(180deg, #0A1628 0%, #050D1A 100%)",
+					"name": "Navy Deep"
+				},
+				{
+					"slug": "gold-gradient",
+					"gradient": "linear-gradient(135deg, #9B7D2B 0%, #E6C97A 100%)",
+					"name": "Gold Gradient"
+				},
+				{
+					"slug": "dark-overlay",
+					"gradient": "linear-gradient(180deg, rgba(5,13,26,0.1) 0%, rgba(5,13,26,0.92) 100%)",
+					"name": "Dark Overlay"
+				},
+				{
+					"slug": "dark-overlay-hero",
+					"gradient": "linear-gradient(120deg, rgba(5,13,26,0.85) 0%, rgba(5,13,26,0.4) 100%)",
+					"name": "Dark Overlay Hero"
+				},
+				{
+					"slug": "cream-gradient",
+					"gradient": "linear-gradient(135deg, #FAF7F2 0%, #F5F0E8 100%)",
+					"name": "Cream Gradient"
+				},
+				{
+					"slug": "black-gradient",
+					"gradient": "linear-gradient(135deg, #0A0A0A 0%, #1A2332 100%)",
+					"name": "Black Gradient"
+				},
+				{
+					"slug": "hero-vanguard",
+					"gradient": "linear-gradient(120deg, #0A0A0A 0%, #111827 100%)",
+					"name": "Hero Vanguard"
+				}
+			],
+			"duotone": [
+				{
+					"slug": "navy-gold",
+					"colors": [ "#0A1628", "#C9A84C" ],
+					"name": "Navy and Gold"
+				},
+				{
+					"slug": "black-white",
+					"colors": [ "#0A0A0A", "#FFFFFF" ],
+					"name": "Black and White"
+				},
+				{
+					"slug": "navy-cream",
+					"colors": [ "#0A1628", "#FAF7F2" ],
+					"name": "Navy and Cream"
+				}
+			]
+		},
+		"typography": {
+			"defaultFontSizes": false,
+			"fontFamilies": [
+				{
+					"fontFamily": "'Playfair Display', Georgia, serif",
+					"slug": "playfair",
+					"name": "Playfair Display (Serif – Headings)",
+					"fontFace": [
+						{
+							"fontFamily": "Playfair Display",
+							"fontWeight": "400",
+							"fontStyle": "normal",
+							"fontDisplay": "swap",
+							"src": [ "https://fonts.gstatic.com/s/playfairdisplay/v37/nuFiD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKdFvXDXbtXK-F2qC0s.woff2" ]
+						},
+						{
+							"fontFamily": "Playfair Display",
+							"fontWeight": "700",
+							"fontStyle": "normal",
+							"fontDisplay": "swap",
+							"src": [ "https://fonts.gstatic.com/s/playfairdisplay/v37/nuFiD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKd3vXDXbtXK-F2qC0s.woff2" ]
+						},
+						{
+							"fontFamily": "Playfair Display",
+							"fontWeight": "400 700",
+							"fontStyle": "italic",
+							"fontDisplay": "swap",
+							"src": [ "https://fonts.gstatic.com/s/playfairdisplay/v37/nuFkD-vYSZviVYUb_rj3ij__anPXDTzYgEM86xRbPQ.woff2" ]
+						}
+					]
+				},
+				{
+					"fontFamily": "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+					"slug": "inter",
+					"name": "Inter (Sans-serif – Body)",
+					"fontFace": [
+						{
+							"fontFamily": "Inter",
+							"fontWeight": "300 700",
+							"fontStyle": "normal",
+							"fontDisplay": "swap",
+							"src": [ "https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiA.woff2" ]
+						}
+					]
+				},
+				{
+					"fontFamily": "'Cormorant Garamond', Garamond, Georgia, serif",
+					"slug": "cormorant",
+					"name": "Cormorant Garamond (Accent – Italic / Quotes)",
+					"fontFace": [
+						{
+							"fontFamily": "Cormorant Garamond",
+							"fontWeight": "300 600",
+							"fontStyle": "normal italic",
+							"fontDisplay": "swap",
+							"src": [ "https://fonts.gstatic.com/s/cormorantgaramond/v16/co3YmX5slCNuHLi8bLeY9MK7whWMhyjYrnFLsS6V7w.woff2" ]
+						}
+					]
+				}
+			],
+			"fontSizes": [
+				{ "slug": "2xs",  "size": "0.625rem",  "name": "2XSmall (10px)" },
+				{ "slug": "xs",   "size": "0.75rem",   "name": "XSmall (12px)" },
+				{ "slug": "sm",   "size": "0.875rem",  "name": "Small (14px)" },
+				{ "slug": "base", "size": "1rem",      "name": "Base (16px)" },
+				{ "slug": "md",   "size": "1.125rem",  "name": "Medium (18px)" },
+				{ "slug": "lg",   "size": "1.25rem",   "name": "Large (20px)" },
+				{ "slug": "xl",   "size": "1.5rem",    "name": "XLarge (24px)" },
+				{ "slug": "2xl",  "size": "1.875rem",  "name": "2XLarge (30px)" },
+				{ "slug": "3xl",  "size": "2.25rem",   "name": "3XLarge (36px)" },
+				{ "slug": "4xl",  "size": "3rem",      "name": "4XLarge (48px)" },
+				{ "slug": "5xl",  "size": "3.75rem",   "name": "5XLarge (60px)" },
+				{ "slug": "6xl",  "size": "4.5rem",    "name": "6XLarge (72px)" },
+				{ "slug": "7xl",  "size": "6rem",      "name": "7XLarge (96px)" },
+				{ "slug": "8xl",  "size": "8rem",      "name": "8XLarge (128px)" }
+			]
+		},
+		"spacing": {
+			"spacingSizes": [
+				{ "slug": "10",  "size": "0.5rem",   "name": "2 (8px)" },
+				{ "slug": "20",  "size": "1rem",     "name": "4 (16px)" },
+				{ "slug": "30",  "size": "1.5rem",   "name": "6 (24px)" },
+				{ "slug": "40",  "size": "2rem",     "name": "8 (32px)" },
+				{ "slug": "50",  "size": "3rem",     "name": "12 (48px)" },
+				{ "slug": "60",  "size": "4rem",     "name": "16 (64px)" },
+				{ "slug": "70",  "size": "6rem",     "name": "24 (96px)" },
+				{ "slug": "80",  "size": "8rem",     "name": "32 (128px)" },
+				{ "slug": "90",  "size": "12rem",    "name": "48 (192px)" }
+			]
+		},
+		"border": {
+			"radius": true,
+			"color": true,
+			"style": true,
+			"width": true
+		},
+		"shadow": {
+			"presets": [
+				{ "slug": "xs",   "shadow": "0 1px 2px rgba(0,0,0,0.08)",                                        "name": "XSmall" },
+				{ "slug": "sm",   "shadow": "0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.08)",           "name": "Small" },
+				{ "slug": "md",   "shadow": "0 4px 6px rgba(0,0,0,0.07), 0 2px 4px rgba(0,0,0,0.06)",           "name": "Medium" },
+				{ "slug": "lg",   "shadow": "0 10px 15px rgba(0,0,0,0.1), 0 4px 6px rgba(0,0,0,0.05)",          "name": "Large" },
+				{ "slug": "xl",   "shadow": "0 20px 25px rgba(0,0,0,0.1), 0 10px 10px rgba(0,0,0,0.04)",        "name": "XLarge" },
+				{ "slug": "2xl",  "shadow": "0 25px 50px rgba(0,0,0,0.25)",                                      "name": "2XLarge" },
+				{ "slug": "gold", "shadow": "0 4px 20px rgba(201,168,76,0.35)",                                  "name": "Gold Glow" },
+				{ "slug": "navy", "shadow": "0 4px 20px rgba(10,22,40,0.5)",                                     "name": "Navy Shadow" }
+			]
+		},
+		"dimensions": { "minHeight": true },
+		"position":   { "sticky": true }
+	},
+
+	"styles": {
+		"color": {
+			"background": "#FFFFFF",
+			"text": "#1A2332"
+		},
+		"typography": {
+			"fontFamily": "var:preset|font-family|inter",
+			"fontSize": "var:preset|font-size|base",
+			"lineHeight": "1.65"
+		},
+		"spacing": {
+			"blockGap": "1.5rem"
+		},
+		"elements": {
+			"heading": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|playfair",
+					"fontWeight": "700",
+					"letterSpacing": "-0.025em"
+				}
+			},
+			"h1": { "typography": { "fontSize": "var:preset|font-size|5xl", "lineHeight": "1.1" } },
+			"h2": { "typography": { "fontSize": "var:preset|font-size|4xl", "lineHeight": "1.15" } },
+			"h3": { "typography": { "fontSize": "var:preset|font-size|3xl", "lineHeight": "1.2" } },
+			"h4": { "typography": { "fontSize": "var:preset|font-size|xl",  "lineHeight": "1.3" } },
+			"h5": { "typography": { "fontSize": "var:preset|font-size|lg",  "lineHeight": "1.4" } },
+			"h6": { "typography": { "fontSize": "var:preset|font-size|base","lineHeight": "1.5" } },
+			"link": {
+				"color": { "text": "#1E3A5F" },
+				":hover": { "color": { "text": "#C9A84C" } }
+			},
+			"button": {
+				"color":      { "background": "#C9A84C", "text": "#0A1628" },
+				"typography": {
+					"fontFamily": "var:preset|font-family|inter",
+					"fontWeight": "700",
+					"textTransform": "uppercase",
+					"letterSpacing": "0.08em",
+					"fontSize": "var:preset|font-size|sm"
+				},
+				"border":  { "radius": "4px" },
+				"spacing": { "padding": { "top": "1rem", "bottom": "1rem", "left": "2.5rem", "right": "2.5rem" } },
+				":hover":  { "color": { "background": "#E6C97A" } }
+			}
+		}
+	},
+
+	"customTemplates": [
+		{ "name": "page-home-v1",              "title": "Home — Opulent (Dark Luxury)",             "postTypes": ["page"] },
+		{ "name": "page-home-v2",              "title": "Home — Pristine (Modern Minimal)",          "postTypes": ["page"] },
+		{ "name": "page-home-v3",              "title": "Home — Vanguard (Bold Contemporary)",       "postTypes": ["page"] },
+		{ "name": "page-properties-v1",        "title": "Properties — Opulent Grid",                 "postTypes": ["page"] },
+		{ "name": "page-properties-v2",        "title": "Properties — Pristine List",                "postTypes": ["page"] },
+		{ "name": "page-properties-v3",        "title": "Properties — Vanguard Map + Grid",          "postTypes": ["page"] },
+		{ "name": "single-property-v1",        "title": "Single Property — Opulent Gallery Top",     "postTypes": ["page"] },
+		{ "name": "single-property-v2",        "title": "Single Property — Pristine Split Layout",   "postTypes": ["page"] },
+		{ "name": "single-property-v3",        "title": "Single Property — Vanguard Immersive",      "postTypes": ["page"] },
+		{ "name": "page-about-v1",             "title": "About — Opulent Brand Story",               "postTypes": ["page"] },
+		{ "name": "page-about-v2",             "title": "About — Pristine Team Focus",               "postTypes": ["page"] },
+		{ "name": "page-about-v3",             "title": "About — Vanguard Mission Statement",        "postTypes": ["page"] },
+		{ "name": "page-contact-v1",           "title": "Contact — Opulent Map + Form",              "postTypes": ["page"] },
+		{ "name": "page-contact-v2",           "title": "Contact — Pristine Minimal",                "postTypes": ["page"] },
+		{ "name": "page-contact-v3",           "title": "Contact — Vanguard Agent Focus",            "postTypes": ["page"] },
+		{ "name": "page-agents-v1",            "title": "Agents — Opulent Card Grid",                "postTypes": ["page"] },
+		{ "name": "page-agents-v2",            "title": "Agents — Pristine Profile List",            "postTypes": ["page"] },
+		{ "name": "page-agents-v3",            "title": "Agents — Vanguard Featured Hero",           "postTypes": ["page"] },
+		{ "name": "single-agent-v1",           "title": "Agent Profile — Opulent",                   "postTypes": ["page"] },
+		{ "name": "single-agent-v2",           "title": "Agent Profile — Pristine",                  "postTypes": ["page"] },
+		{ "name": "single-agent-v3",           "title": "Agent Profile — Vanguard",                  "postTypes": ["page"] },
+		{ "name": "page-blog-v1",              "title": "Blog — Opulent Magazine",                   "postTypes": ["page"] },
+		{ "name": "page-blog-v2",              "title": "Blog — Pristine Editorial",                 "postTypes": ["page"] },
+		{ "name": "page-blog-v3",              "title": "Blog — Vanguard Bold Grid",                 "postTypes": ["page"] },
+		{ "name": "single-post-v1",            "title": "Blog Post — Opulent",                       "postTypes": ["post"] },
+		{ "name": "single-post-v2",            "title": "Blog Post — Pristine Sidebar",              "postTypes": ["post"] },
+		{ "name": "single-post-v3",            "title": "Blog Post — Vanguard Immersive",            "postTypes": ["post"] },
+		{ "name": "page-services-v1",          "title": "Services — Opulent Cards",                  "postTypes": ["page"] },
+		{ "name": "page-services-v2",          "title": "Services — Pristine Alternating Sections",  "postTypes": ["page"] },
+		{ "name": "page-services-v3",          "title": "Services — Vanguard Icon Feature Grid",     "postTypes": ["page"] },
+		{ "name": "page-neighborhoods-v1",     "title": "Neighborhoods — Opulent Map Grid",          "postTypes": ["page"] },
+		{ "name": "page-neighborhoods-v2",     "title": "Neighborhoods — Pristine Photo Grid",       "postTypes": ["page"] },
+		{ "name": "page-neighborhoods-v3",     "title": "Neighborhoods — Vanguard Stats View",       "postTypes": ["page"] },
+		{ "name": "single-neighborhood-v1",    "title": "Neighborhood Detail — Opulent",             "postTypes": ["page"] },
+		{ "name": "single-neighborhood-v2",    "title": "Neighborhood Detail — Pristine",            "postTypes": ["page"] },
+		{ "name": "single-neighborhood-v3",    "title": "Neighborhood Detail — Vanguard",            "postTypes": ["page"] },
+		{ "name": "page-mortgage-v1",          "title": "Mortgage Calculator — Opulent",             "postTypes": ["page"] },
+		{ "name": "page-mortgage-v2",          "title": "Mortgage Calculator — Pristine Split",      "postTypes": ["page"] },
+		{ "name": "page-mortgage-v3",          "title": "Mortgage Calculator — Vanguard Full Page",  "postTypes": ["page"] },
+		{ "name": "page-testimonials-v1",      "title": "Testimonials — Opulent Cards",              "postTypes": ["page"] },
+		{ "name": "page-testimonials-v2",      "title": "Testimonials — Pristine Masonry",           "postTypes": ["page"] },
+		{ "name": "page-testimonials-v3",      "title": "Testimonials — Vanguard Video Quotes",      "postTypes": ["page"] },
+		{ "name": "page-faq-v1",               "title": "FAQ — Opulent Accordion",                   "postTypes": ["page"] },
+		{ "name": "page-faq-v2",               "title": "FAQ — Pristine Two-Column",                 "postTypes": ["page"] },
+		{ "name": "page-faq-v3",               "title": "FAQ — Vanguard Tabbed Categories",          "postTypes": ["page"] },
+		{ "name": "search-v1",                 "title": "Search Results — Opulent Sidebar Filter",   "postTypes": ["page"] },
+		{ "name": "search-v2",                 "title": "Search Results — Pristine Top Filter Bar",  "postTypes": ["page"] },
+		{ "name": "search-v3",                 "title": "Search Results — Vanguard Map View",        "postTypes": ["page"] },
+		{ "name": "404-v1",                    "title": "404 — Opulent Minimal",                     "postTypes": ["page"] },
+		{ "name": "404-v2",                    "title": "404 — Pristine Search Focused",             "postTypes": ["page"] },
+		{ "name": "404-v3",                    "title": "404 — Vanguard Featured Properties",        "postTypes": ["page"] }
+	],
+
+	"templateParts": [
+		{ "name": "header-v1", "title": "Header — Opulent",  "area": "header" },
+		{ "name": "header-v2", "title": "Header — Pristine", "area": "header" },
+		{ "name": "header-v3", "title": "Header — Vanguard", "area": "header" },
+		{ "name": "footer-v1", "title": "Footer — Opulent",  "area": "footer" },
+		{ "name": "footer-v2", "title": "Footer — Pristine", "area": "footer" },
+		{ "name": "footer-v3", "title": "Footer — Vanguard", "area": "footer" }
+	],
+
+	"patterns": [
+		"luxe-estate-pro/hero-opulent",
+		"luxe-estate-pro/hero-pristine",
+		"luxe-estate-pro/hero-vanguard",
+		"luxe-estate-pro/property-card-grid",
+		"luxe-estate-pro/property-search-bar",
+		"luxe-estate-pro/stats-section",
+		"luxe-estate-pro/cta-opulent",
+		"luxe-estate-pro/cta-pristine",
+		"luxe-estate-pro/cta-vanguard",
+		"luxe-estate-pro/testimonials-grid",
+		"luxe-estate-pro/agent-card-grid",
+		"luxe-estate-pro/neighborhood-grid"
+	]
+}

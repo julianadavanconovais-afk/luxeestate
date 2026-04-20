@@ -1,0 +1,136 @@
+<!-- ============================================================
+   SINGLE PROPERTY V2: PRISTINE — Split gallery/info, white clean
+   Layout: Left sticky gallery | Right scrollable details + form
+   ============================================================ -->
+
+<!-- wp:template-part {"slug":"header-v2","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"main","style":{"color":{"background":"#FFFFFF"},"spacing":{"padding":{"top":"0","bottom":"0"}}},"layout":{"type":"default"}} -->
+<main class="wp-block-group" style="background:#FFFFFF">
+
+  <!-- Breadcrumb bar -->
+  <!-- wp:group {"style":{"color":{"background":"#FAF7F2"},"spacing":{"padding":{"top":"1rem","bottom":"1rem"}},"border":{"bottom":{"color":"#E5E7EB","style":"solid","width":"1px"}}},"layout":{"type":"constrained"}} -->
+  <div class="wp-block-group" style="background:#FAF7F2;padding-top:1rem;padding-bottom:1rem;border-bottom:1px solid #E5E7EB">
+    <div style="display:flex;align-items:center;gap:0.5rem;font-size:0.8rem;color:#9CA3AF">
+      <a href="/" style="color:#9CA3AF;text-decoration:none">Home</a> /
+      <a href="/properties" style="color:#9CA3AF;text-decoration:none">Properties</a> /
+      <span style="color:#C9A84C">Ocean View Penthouse</span>
+    </div>
+  </div>
+  <!-- /wp:group -->
+
+  <!-- Split Layout -->
+  <!-- wp:html -->
+  <div style="display:grid;grid-template-columns:1fr 520px;min-height:calc(100vh - 120px);align-items:start">
+
+    <!-- Left: Sticky Gallery -->
+    <div style="position:sticky;top:72px;height:calc(100vh - 72px);overflow:hidden">
+
+      <!-- Main image -->
+      <div style="height:65%;background:linear-gradient(135deg,#D4C4A8,#9B7D2B);position:relative">
+        <div style="position:absolute;top:1.25rem;left:1.25rem;display:flex;gap:0.5rem">
+          <span style="background:#C9A84C;color:#0A1628;font-size:0.65rem;font-weight:700;padding:0.35rem 0.8rem;border-radius:100px">Exclusive</span>
+          <span style="background:#10B981;color:#FFF;font-size:0.65rem;font-weight:700;padding:0.35rem 0.8rem;border-radius:100px">For Sale</span>
+        </div>
+        <button style="position:absolute;bottom:1.25rem;right:1.25rem;background:rgba(255,255,255,0.9);color:#0A1628;border:none;padding:0.6rem 1.25rem;border-radius:100px;font-size:0.78rem;font-weight:700;cursor:pointer;backdrop-filter:blur(8px)">📷 View All 16 Photos</button>
+      </div>
+
+      <!-- Thumbnail strip -->
+      <div style="height:35%;display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:#E5E7EB">
+        <div style="background:linear-gradient(135deg,#E5E7EB,#D4C4A8)"></div>
+        <div style="background:linear-gradient(135deg,#D4C4A8,#C8D8E8)"></div>
+        <div style="background:linear-gradient(135deg,#C8D8E8,#9CA3AF)"></div>
+        <div style="background:linear-gradient(135deg,#9CA3AF,#9B7D2B);position:relative;display:flex;align-items:center;justify-content:center">
+          <div style="position:absolute;inset:0;background:rgba(10,22,40,0.5);display:flex;align-items:center;justify-content:center">
+            <p style="color:#FFFFFF;font-size:0.9rem;font-weight:700">+12</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Scrollable Details -->
+    <div style="background:#FFFFFF;border-left:1px solid #E5E7EB;padding:2.5rem;overflow-y:auto">
+
+      <!-- Price + Title -->
+      <div style="margin-bottom:2rem">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:0.5rem">
+          <p style="font-family:var(--wp--preset--font-family--playfair);font-size:2.25rem;font-weight:700;color:#0A1628;margin:0">$4,850,000</p>
+          <button style="background:none;border:none;font-size:1.5rem;cursor:pointer;color:#9CA3AF" title="Save to favorites">♡</button>
+        </div>
+        <h1 style="font-family:var(--wp--preset--font-family--playfair);font-size:1.5rem;font-weight:700;color:#374151;margin:0 0 0.5rem">Ocean View Penthouse</h1>
+        <p style="font-size:0.875rem;color:#9CA3AF">📍 1200 Brickell Bay Drive, Unit PH01, Brickell, Miami, FL 33131</p>
+      </div>
+
+      <!-- Quick stats row -->
+      <div style="display:flex;gap:1.5rem;padding:1.25rem 0;border-top:1px solid #F3F4F6;border-bottom:1px solid #F3F4F6;margin-bottom:2rem;flex-wrap:wrap">
+        <div style="text-align:center"><p style="font-weight:700;font-size:1.25rem;color:#0A1628;margin:0">5</p><p style="font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;color:#9CA3AF;margin:0.2rem 0 0">Beds</p></div>
+        <div style="text-align:center"><p style="font-weight:700;font-size:1.25rem;color:#0A1628;margin:0">4</p><p style="font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;color:#9CA3AF;margin:0.2rem 0 0">Baths</p></div>
+        <div style="text-align:center"><p style="font-weight:700;font-size:1.25rem;color:#0A1628;margin:0">4,200</p><p style="font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;color:#9CA3AF;margin:0.2rem 0 0">Sq Ft</p></div>
+        <div style="text-align:center"><p style="font-weight:700;font-size:1.25rem;color:#0A1628;margin:0">$1,155</p><p style="font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;color:#9CA3AF;margin:0.2rem 0 0">Per Sqft</p></div>
+        <div style="text-align:center"><p style="font-weight:700;font-size:1.25rem;color:#0A1628;margin:0">2019</p><p style="font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;color:#9CA3AF;margin:0.2rem 0 0">Year Built</p></div>
+      </div>
+
+      <!-- Description -->
+      <div style="margin-bottom:2rem">
+        <h2 style="font-family:var(--wp--preset--font-family--playfair);font-size:1.25rem;font-weight:700;color:#0A1628;margin-bottom:1rem">About This Property</h2>
+        <p style="font-size:0.9rem;line-height:1.8;color:#6B7280">Experience the pinnacle of Miami luxury living in this spectacular full-floor penthouse. Commanding 360-degree panoramic views of Biscayne Bay, Miami's glittering skyline, and the Atlantic Ocean, this extraordinary residence redefines sophisticated urban living.</p>
+        <p style="font-size:0.9rem;line-height:1.8;color:#6B7280;margin-top:0.75rem">The chef's kitchen features Sub-Zero appliances, custom cabinetry, and Calacatta marble countertops. The primary suite includes a spa bathroom with a freestanding soaking tub and walk-in rain shower.</p>
+      </div>
+
+      <!-- Highlights -->
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.6rem;margin-bottom:2rem">
+        <div style="display:flex;align-items:center;gap:0.6rem;background:#FAF7F2;border-radius:6px;padding:0.75rem"><span>🌊</span><span style="font-size:0.82rem;color:#374151">Ocean Views</span></div>
+        <div style="display:flex;align-items:center;gap:0.6rem;background:#FAF7F2;border-radius:6px;padding:0.75rem"><span>🏊</span><span style="font-size:0.82rem;color:#374151">Private Pool</span></div>
+        <div style="display:flex;align-items:center;gap:0.6rem;background:#FAF7F2;border-radius:6px;padding:0.75rem"><span>🔒</span><span style="font-size:0.82rem;color:#374151">24/7 Concierge</span></div>
+        <div style="display:flex;align-items:center;gap:0.6rem;background:#FAF7F2;border-radius:6px;padding:0.75rem"><span>📱</span><span style="font-size:0.82rem;color:#374151">Smart Home</span></div>
+        <div style="display:flex;align-items:center;gap:0.6rem;background:#FAF7F2;border-radius:6px;padding:0.75rem"><span>🚗</span><span style="font-size:0.82rem;color:#374151">Valet Parking</span></div>
+        <div style="display:flex;align-items:center;gap:0.6rem;background:#FAF7F2;border-radius:6px;padding:0.75rem"><span>🌿</span><span style="font-size:0.82rem;color:#374151">1,200 sqft Terrace</span></div>
+      </div>
+
+      <!-- Agent + Contact Form -->
+      <div style="background:#FAF7F2;border-radius:12px;padding:1.75rem;margin-bottom:1.5rem;border:1px solid #F3F4F6">
+        <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1.5rem">
+          <div style="width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,#D4C4A8,#9B7D2B);border:2px solid #C9A84C;flex-shrink:0"></div>
+          <div>
+            <p style="font-weight:700;font-size:0.95rem;color:#0A1628;margin:0">Alexandra Chen</p>
+            <p style="font-size:0.75rem;color:#C9A84C;text-transform:uppercase;letter-spacing:0.08em;margin:0.2rem 0 0">Senior Luxury Advisor</p>
+          </div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:0.65rem">
+          <input type="text" placeholder="Your Name" style="border:1px solid #E5E7EB;border-radius:6px;padding:0.8rem 1rem;font-size:0.875rem;color:#374151;outline:none;width:100%;box-sizing:border-box;background:#FFFFFF" />
+          <input type="email" placeholder="Email Address" style="border:1px solid #E5E7EB;border-radius:6px;padding:0.8rem 1rem;font-size:0.875rem;color:#374151;outline:none;width:100%;box-sizing:border-box;background:#FFFFFF" />
+          <textarea rows="3" placeholder="I'd like to schedule a showing..." style="border:1px solid #E5E7EB;border-radius:6px;padding:0.8rem 1rem;font-size:0.875rem;color:#374151;outline:none;width:100%;resize:none;box-sizing:border-box;background:#FFFFFF"></textarea>
+          <button style="background:#0A1628;color:#FFFFFF;border:none;padding:1rem;border-radius:6px;font-size:0.82rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;cursor:pointer">Request a Showing</button>
+        </div>
+      </div>
+
+      <!-- Mortgage snippet -->
+      <div style="background:#FAF7F2;border-radius:8px;padding:1.25rem;text-align:center;border:1px solid #F3F4F6">
+        <p style="font-size:0.7rem;text-transform:uppercase;letter-spacing:0.12em;color:#9CA3AF;margin-bottom:0.25rem">Estimated Monthly Payment</p>
+        <p style="font-family:var(--wp--preset--font-family--playfair);font-size:1.75rem;font-weight:700;color:#0A1628;margin:0">$22,680</p>
+        <p style="font-size:0.78rem;color:#9CA3AF;margin-top:0.25rem">20% down · 30yr · 6.5% · <a href="/mortgage-calculator" style="color:#C9A84C;text-decoration:none">Adjust →</a></p>
+      </div>
+
+    </div>
+  </div>
+  <!-- /wp:html -->
+
+  <!-- Similar Properties -->
+  <!-- wp:group {"style":{"color":{"background":"#FAF7F2"},"spacing":{"padding":{"top":"4rem","bottom":"4rem"}},"border":{"top":{"color":"#E5E7EB","style":"solid","width":"1px"}}},"layout":{"type":"constrained"}} -->
+  <div class="wp-block-group" style="background:#FAF7F2;padding-top:4rem;padding-bottom:4rem;border-top:1px solid #E5E7EB">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:2.5rem">
+      <h2 style="font-family:var(--wp--preset--font-family--playfair);font-weight:700;font-size:2rem;color:#0A1628">You May Also Like</h2>
+      <a href="/properties" style="font-size:0.78rem;font-weight:600;color:#0A1628;text-decoration:none;border-bottom:1px solid #0A1628">View All →</a>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem">
+      <div style="background:#FFFFFF;border:1px solid #E5E7EB;border-radius:12px;overflow:hidden"><div style="aspect-ratio:16/9;background:linear-gradient(135deg,#E5E7EB,#D4C4A8)"></div><div style="padding:1.25rem"><p style="font-family:var(--wp--preset--font-family--playfair);font-size:1.15rem;font-weight:700;color:#0A1628">$3,750,000</p><p style="font-size:0.875rem;color:#374151">Brickell Bay Penthouse</p><p style="font-size:0.78rem;color:#9CA3AF">Brickell</p></div></div>
+      <div style="background:#FFFFFF;border:1px solid #E5E7EB;border-radius:12px;overflow:hidden"><div style="aspect-ratio:16/9;background:linear-gradient(135deg,#D4C4A8,#C8D8E8)"></div><div style="padding:1.25rem"><p style="font-family:var(--wp--preset--font-family--playfair);font-size:1.15rem;font-weight:700;color:#0A1628">$6,200,000</p><p style="font-size:0.875rem;color:#374151">Ocean Drive Penthouse</p><p style="font-size:0.78rem;color:#9CA3AF">South Beach</p></div></div>
+      <div style="background:#FFFFFF;border:1px solid #E5E7EB;border-radius:12px;overflow:hidden"><div style="aspect-ratio:16/9;background:linear-gradient(135deg,#C8D8E8,#9CA3AF)"></div><div style="padding:1.25rem"><p style="font-family:var(--wp--preset--font-family--playfair);font-size:1.15rem;font-weight:700;color:#0A1628">$8,500,000</p><p style="font-size:0.875rem;color:#374151">Waterfront Estate</p><p style="font-size:0.78rem;color:#9CA3AF">Key Biscayne</p></div></div>
+    </div>
+  </div>
+  <!-- /wp:group -->
+
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer-v2","tagName":"footer"} /-->

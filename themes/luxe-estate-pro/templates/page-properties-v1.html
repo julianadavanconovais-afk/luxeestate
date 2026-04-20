@@ -1,0 +1,227 @@
+<!-- ============================================================
+   PROPERTIES V1: OPULENT — Dark luxury grid layout
+   Layout: Sidebar filters (left) + 3-col card grid (right)
+   ============================================================ -->
+
+<!-- wp:template-part {"slug":"header-v1","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"main","style":{"color":{"background":"#0A1628"},"spacing":{"padding":{"top":"0","bottom":"0"}}},"layout":{"type":"default"}} -->
+<main class="wp-block-group" style="background:#0A1628">
+
+  <!-- Page Header Banner -->
+  <!-- wp:group {"style":{"color":{"background":"#050D1A"},"spacing":{"padding":{"top":"4rem","bottom":"4rem"}},"border":{"bottom":{"color":"rgba(201,168,76,0.15)","style":"solid","width":"1px"}}},"layout":{"type":"constrained"}} -->
+  <div class="wp-block-group" style="background:#050D1A;padding-top:4rem;padding-bottom:4rem;border-bottom:1px solid rgba(201,168,76,0.15)">
+    <p style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.2em;color:#C9A84C;margin-bottom:0.75rem">Curated Collection</p>
+    <h1 style="font-family:var(--wp--preset--font-family--playfair);font-weight:700;font-size:clamp(2.25rem,4vw,3.5rem);color:#FFFFFF;letter-spacing:-0.03em;margin-bottom:0.5rem">All Properties</h1>
+    <p style="font-size:0.875rem;color:#9CA3AF">Showing 1,200+ luxury properties across Greater Miami</p>
+  </div>
+  <!-- /wp:group -->
+
+  <!-- Main Content: Sidebar + Grid -->
+  <!-- wp:group {"style":{"color":{"background":"#0A1628"},"spacing":{"padding":{"top":"3rem","bottom":"5rem"}}},"layout":{"type":"constrained"}} -->
+  <div class="wp-block-group" style="background:#0A1628;padding-top:3rem;padding-bottom:5rem">
+    <!-- wp:html -->
+    <div style="display:grid;grid-template-columns:280px 1fr;gap:2.5rem;align-items:start">
+
+      <!-- Sidebar Filters -->
+      <aside style="background:#112240;border:1px solid rgba(201,168,76,0.1);border-radius:12px;padding:1.75rem;position:sticky;top:100px">
+        <h3 style="font-family:var(--wp--preset--font-family--inter);font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.15em;color:#E6C97A;margin-bottom:1.25rem">Filter Properties</h3>
+
+        <!-- Price Range -->
+        <div style="margin-bottom:1.75rem">
+          <p style="font-size:0.7rem;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;color:#9CA3AF;margin-bottom:0.75rem">Price Range</p>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.5rem">
+            <input type="number" placeholder="Min" style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:4px;padding:0.65rem 0.75rem;color:#FFFFFF;font-size:0.85rem;outline:none;width:100%" />
+            <input type="number" placeholder="Max" style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:4px;padding:0.65rem 0.75rem;color:#FFFFFF;font-size:0.85rem;outline:none;width:100%" />
+          </div>
+        </div>
+
+        <!-- Property Type -->
+        <div style="margin-bottom:1.75rem">
+          <p style="font-size:0.7rem;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;color:#9CA3AF;margin-bottom:0.75rem">Property Type</p>
+          <div style="display:flex;flex-direction:column;gap:0.5rem">
+            <label style="display:flex;align-items:center;gap:0.6rem;cursor:pointer"><input type="checkbox" style="accent-color:#C9A84C" /> <span style="font-size:0.875rem;color:#D1D5DB">Luxury Home (320)</span></label>
+            <label style="display:flex;align-items:center;gap:0.6rem;cursor:pointer"><input type="checkbox" style="accent-color:#C9A84C" /> <span style="font-size:0.875rem;color:#D1D5DB">Penthouse (85)</span></label>
+            <label style="display:flex;align-items:center;gap:0.6rem;cursor:pointer"><input type="checkbox" style="accent-color:#C9A84C" /> <span style="font-size:0.875rem;color:#D1D5DB">Villa &amp; Estate (145)</span></label>
+            <label style="display:flex;align-items:center;gap:0.6rem;cursor:pointer"><input type="checkbox" style="accent-color:#C9A84C" /> <span style="font-size:0.875rem;color:#D1D5DB">Waterfront (210)</span></label>
+            <label style="display:flex;align-items:center;gap:0.6rem;cursor:pointer"><input type="checkbox" style="accent-color:#C9A84C" /> <span style="font-size:0.875rem;color:#D1D5DB">Commercial (200)</span></label>
+            <label style="display:flex;align-items:center;gap:0.6rem;cursor:pointer"><input type="checkbox" style="accent-color:#C9A84C" /> <span style="font-size:0.875rem;color:#D1D5DB">New Development (240)</span></label>
+          </div>
+        </div>
+
+        <!-- Bedrooms -->
+        <div style="margin-bottom:1.75rem">
+          <p style="font-size:0.7rem;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;color:#9CA3AF;margin-bottom:0.75rem">Bedrooms</p>
+          <div style="display:flex;gap:0.5rem;flex-wrap:wrap">
+            <button style="background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.1);border-radius:4px;padding:0.5rem 0.9rem;font-size:0.82rem;color:#D1D5DB;cursor:pointer">Any</button>
+            <button style="background:#C9A84C;border:1px solid #C9A84C;border-radius:4px;padding:0.5rem 0.9rem;font-size:0.82rem;color:#0A1628;font-weight:700;cursor:pointer">2+</button>
+            <button style="background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.1);border-radius:4px;padding:0.5rem 0.9rem;font-size:0.82rem;color:#D1D5DB;cursor:pointer">3+</button>
+            <button style="background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.1);border-radius:4px;padding:0.5rem 0.9rem;font-size:0.82rem;color:#D1D5DB;cursor:pointer">4+</button>
+            <button style="background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.1);border-radius:4px;padding:0.5rem 0.9rem;font-size:0.82rem;color:#D1D5DB;cursor:pointer">5+</button>
+          </div>
+        </div>
+
+        <!-- Neighborhood -->
+        <div style="margin-bottom:1.75rem">
+          <p style="font-size:0.7rem;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;color:#9CA3AF;margin-bottom:0.75rem">Neighborhood</p>
+          <select style="width:100%;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:4px;padding:0.75rem;color:#D1D5DB;font-size:0.875rem;outline:none">
+            <option style="background:#112240">All Areas</option>
+            <option style="background:#112240">Brickell</option>
+            <option style="background:#112240">Coconut Grove</option>
+            <option style="background:#112240">Coral Gables</option>
+            <option style="background:#112240">Key Biscayne</option>
+            <option style="background:#112240">South Beach</option>
+            <option style="background:#112240">Bal Harbour</option>
+          </select>
+        </div>
+
+        <!-- Status -->
+        <div style="margin-bottom:2rem">
+          <p style="font-size:0.7rem;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;color:#9CA3AF;margin-bottom:0.75rem">Status</p>
+          <div style="display:flex;flex-direction:column;gap:0.5rem">
+            <label style="display:flex;align-items:center;gap:0.6rem;cursor:pointer"><input type="checkbox" style="accent-color:#C9A84C" checked /> <span style="font-size:0.875rem;color:#D1D5DB">For Sale</span></label>
+            <label style="display:flex;align-items:center;gap:0.6rem;cursor:pointer"><input type="checkbox" style="accent-color:#C9A84C" /> <span style="font-size:0.875rem;color:#D1D5DB">For Rent</span></label>
+            <label style="display:flex;align-items:center;gap:0.6rem;cursor:pointer"><input type="checkbox" style="accent-color:#C9A84C" /> <span style="font-size:0.875rem;color:#D1D5DB">Pre-Construction</span></label>
+          </div>
+        </div>
+
+        <button style="width:100%;background:#C9A84C;color:#0A1628;border:none;padding:1rem;border-radius:4px;font-family:var(--wp--preset--font-family--inter);font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;cursor:pointer">Apply Filters</button>
+        <button style="width:100%;background:transparent;color:#9CA3AF;border:none;padding:0.75rem;font-size:0.78rem;cursor:pointer;margin-top:0.5rem">Clear All</button>
+      </aside>
+
+      <!-- Properties Grid -->
+      <div>
+        <!-- Toolbar -->
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1.75rem;flex-wrap:wrap;gap:0.75rem">
+          <p style="font-size:0.875rem;color:#9CA3AF"><strong style="color:#FFFFFF">1,200</strong> properties found</p>
+          <div style="display:flex;gap:0.75rem;align-items:center">
+            <select style="background:#112240;border:1px solid rgba(255,255,255,0.1);border-radius:4px;padding:0.6rem 1rem;color:#D1D5DB;font-size:0.82rem;outline:none">
+              <option>Sort: Newest</option><option>Price: Low–High</option><option>Price: High–Low</option>
+            </select>
+            <div style="display:flex;gap:0.25rem">
+              <button style="background:#C9A84C;border:none;width:36px;height:36px;border-radius:4px;cursor:pointer;font-size:1rem">⊞</button>
+              <button style="background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.1);width:36px;height:36px;border-radius:4px;cursor:pointer;font-size:1rem;color:#D1D5DB">☰</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Property Grid — 3 columns -->
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem">
+
+          <!-- Repeat card pattern 6 times -->
+          <div style="background:#112240;border:1px solid rgba(201,168,76,0.08);border-radius:12px;overflow:hidden">
+            <div style="aspect-ratio:4/3;background:linear-gradient(135deg,#1E3A5F,#2C5282);position:relative">
+              <div style="position:absolute;top:0.75rem;left:0.75rem;background:#C9A84C;color:#0A1628;font-size:0.65rem;font-weight:700;padding:0.3rem 0.7rem;border-radius:100px">$4,850,000</div>
+              <div style="position:absolute;top:0.75rem;right:0.75rem;background:#10B981;color:#FFF;font-size:0.6rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:100px;text-transform:uppercase">For Sale</div>
+            </div>
+            <div style="padding:1.25rem">
+              <p style="font-family:var(--wp--preset--font-family--playfair);font-size:1.1rem;font-weight:700;color:#FFFFFF;margin:0 0 0.2rem">Ocean View Penthouse</p>
+              <p style="font-size:0.82rem;color:#9CA3AF;margin-bottom:0.85rem">1200 Brickell Bay Dr, Miami</p>
+              <div style="display:flex;gap:1rem;padding-top:0.85rem;border-top:1px solid rgba(255,255,255,0.06)">
+                <span style="font-size:0.75rem;color:#9CA3AF">5 Beds</span>
+                <span style="font-size:0.75rem;color:#9CA3AF">4 Baths</span>
+                <span style="font-size:0.75rem;color:#9CA3AF">4,200 sqft</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="background:#112240;border:1px solid rgba(201,168,76,0.08);border-radius:12px;overflow:hidden">
+            <div style="aspect-ratio:4/3;background:linear-gradient(135deg,#112240,#1E3A5F);position:relative">
+              <div style="position:absolute;top:0.75rem;left:0.75rem;background:#C9A84C;color:#0A1628;font-size:0.65rem;font-weight:700;padding:0.3rem 0.7rem;border-radius:100px">$2,295,000</div>
+              <div style="position:absolute;top:0.75rem;right:0.75rem;background:#3A6EA8;color:#FFF;font-size:0.6rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:100px;text-transform:uppercase">New</div>
+            </div>
+            <div style="padding:1.25rem">
+              <p style="font-family:var(--wp--preset--font-family--playfair);font-size:1.1rem;font-weight:700;color:#FFFFFF;margin:0 0 0.2rem">Mediterranean Villa</p>
+              <p style="font-size:0.82rem;color:#9CA3AF;margin-bottom:0.85rem">550 Alhambra Circle, Coral Gables</p>
+              <div style="display:flex;gap:1rem;padding-top:0.85rem;border-top:1px solid rgba(255,255,255,0.06)">
+                <span style="font-size:0.75rem;color:#9CA3AF">4 Beds</span>
+                <span style="font-size:0.75rem;color:#9CA3AF">3 Baths</span>
+                <span style="font-size:0.75rem;color:#9CA3AF">3,100 sqft</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="background:#112240;border:1px solid rgba(201,168,76,0.08);border-radius:12px;overflow:hidden">
+            <div style="aspect-ratio:4/3;background:linear-gradient(135deg,#0E1F38,#2C5282);position:relative">
+              <div style="position:absolute;top:0.75rem;left:0.75rem;background:#C9A84C;color:#0A1628;font-size:0.65rem;font-weight:700;padding:0.3rem 0.7rem;border-radius:100px">$8,500,000</div>
+              <div style="position:absolute;top:0.75rem;right:0.75rem;background:#9B7D2B;color:#FFF;font-size:0.6rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:100px;text-transform:uppercase">Exclusive</div>
+            </div>
+            <div style="padding:1.25rem">
+              <p style="font-family:var(--wp--preset--font-family--playfair);font-size:1.1rem;font-weight:700;color:#FFFFFF;margin:0 0 0.2rem">Waterfront Estate</p>
+              <p style="font-size:0.82rem;color:#9CA3AF;margin-bottom:0.85rem">720 Harbor Dr, Key Biscayne</p>
+              <div style="display:flex;gap:1rem;padding-top:0.85rem;border-top:1px solid rgba(255,255,255,0.06)">
+                <span style="font-size:0.75rem;color:#9CA3AF">7 Beds</span>
+                <span style="font-size:0.75rem;color:#9CA3AF">6 Baths</span>
+                <span style="font-size:0.75rem;color:#9CA3AF">7,800 sqft</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="background:#112240;border:1px solid rgba(201,168,76,0.08);border-radius:12px;overflow:hidden">
+            <div style="aspect-ratio:4/3;background:linear-gradient(135deg,#1E3A5F,#3A6EA8);position:relative">
+              <div style="position:absolute;top:0.75rem;left:0.75rem;background:#C9A84C;color:#0A1628;font-size:0.65rem;font-weight:700;padding:0.3rem 0.7rem;border-radius:100px">$1,850,000</div>
+            </div>
+            <div style="padding:1.25rem">
+              <p style="font-family:var(--wp--preset--font-family--playfair);font-size:1.1rem;font-weight:700;color:#FFFFFF;margin:0 0 0.2rem">Coconut Grove Colonial</p>
+              <p style="font-size:0.82rem;color:#9CA3AF;margin-bottom:0.85rem">3800 Kirk St, Coconut Grove</p>
+              <div style="display:flex;gap:1rem;padding-top:0.85rem;border-top:1px solid rgba(255,255,255,0.06)">
+                <span style="font-size:0.75rem;color:#9CA3AF">3 Beds</span>
+                <span style="font-size:0.75rem;color:#9CA3AF">2.5 Baths</span>
+                <span style="font-size:0.75rem;color:#9CA3AF">2,800 sqft</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="background:#112240;border:1px solid rgba(201,168,76,0.08);border-radius:12px;overflow:hidden">
+            <div style="aspect-ratio:4/3;background:linear-gradient(135deg,#2C5282,#1E3A5F);position:relative">
+              <div style="position:absolute;top:0.75rem;left:0.75rem;background:#C9A84C;color:#0A1628;font-size:0.65rem;font-weight:700;padding:0.3rem 0.7rem;border-radius:100px">$3,750,000</div>
+            </div>
+            <div style="padding:1.25rem">
+              <p style="font-family:var(--wp--preset--font-family--playfair);font-size:1.1rem;font-weight:700;color:#FFFFFF;margin:0 0 0.2rem">Star Island Modern</p>
+              <p style="font-size:0.82rem;color:#9CA3AF;margin-bottom:0.85rem">22 Star Island Dr, Miami Beach</p>
+              <div style="display:flex;gap:1rem;padding-top:0.85rem;border-top:1px solid rgba(255,255,255,0.06)">
+                <span style="font-size:0.75rem;color:#9CA3AF">5 Beds</span>
+                <span style="font-size:0.75rem;color:#9CA3AF">4 Baths</span>
+                <span style="font-size:0.75rem;color:#9CA3AF">5,500 sqft</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="background:#112240;border:1px solid rgba(201,168,76,0.08);border-radius:12px;overflow:hidden">
+            <div style="aspect-ratio:4/3;background:linear-gradient(135deg,#1E3A5F,#050D1A);position:relative">
+              <div style="position:absolute;top:0.75rem;left:0.75rem;background:#C9A84C;color:#0A1628;font-size:0.65rem;font-weight:700;padding:0.3rem 0.7rem;border-radius:100px">$6,900,000</div>
+              <div style="position:absolute;top:0.75rem;right:0.75rem;background:#10B981;color:#FFF;font-size:0.6rem;font-weight:700;padding:0.3rem 0.6rem;border-radius:100px;text-transform:uppercase">For Sale</div>
+            </div>
+            <div style="padding:1.25rem">
+              <p style="font-family:var(--wp--preset--font-family--playfair);font-size:1.1rem;font-weight:700;color:#FFFFFF;margin:0 0 0.2rem">South Beach Penthouse</p>
+              <p style="font-size:0.82rem;color:#9CA3AF;margin-bottom:0.85rem">1000 Collins Ave, Miami Beach</p>
+              <div style="display:flex;gap:1rem;padding-top:0.85rem;border-top:1px solid rgba(255,255,255,0.06)">
+                <span style="font-size:0.75rem;color:#9CA3AF">4 Beds</span>
+                <span style="font-size:0.75rem;color:#9CA3AF">3.5 Baths</span>
+                <span style="font-size:0.75rem;color:#9CA3AF">4,600 sqft</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Pagination -->
+        <div style="display:flex;justify-content:center;align-items:center;gap:0.5rem;margin-top:3rem">
+          <a href="#" style="width:40px;height:40px;background:#C9A84C;border-radius:4px;display:flex;align-items:center;justify-content:center;color:#0A1628;font-weight:700;font-size:0.875rem;text-decoration:none">1</a>
+          <a href="#" style="width:40px;height:40px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.1);border-radius:4px;display:flex;align-items:center;justify-content:center;color:#D1D5DB;text-decoration:none;font-size:0.875rem">2</a>
+          <a href="#" style="width:40px;height:40px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.1);border-radius:4px;display:flex;align-items:center;justify-content:center;color:#D1D5DB;text-decoration:none;font-size:0.875rem">3</a>
+          <span style="color:#9CA3AF;padding:0 0.5rem">…</span>
+          <a href="#" style="width:40px;height:40px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.1);border-radius:4px;display:flex;align-items:center;justify-content:center;color:#D1D5DB;text-decoration:none;font-size:0.875rem">24</a>
+          <a href="#" style="height:40px;padding:0 1rem;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.1);border-radius:4px;display:flex;align-items:center;color:#D1D5DB;text-decoration:none;font-size:0.875rem">Next →</a>
+        </div>
+
+      </div>
+    </div>
+    <!-- /wp:html -->
+  </div>
+  <!-- /wp:group -->
+
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer-v1","tagName":"footer"} /-->

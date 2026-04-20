@@ -1,0 +1,161 @@
+<!-- ============================================================
+   PROPERTIES V2: PRISTINE — White list layout with top filter bar
+   Layout: Inline filter bar + list-style property cards
+   ============================================================ -->
+
+<!-- wp:template-part {"slug":"header-v2","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"main","style":{"color":{"background":"#FFFFFF"},"spacing":{"padding":{"top":"0","bottom":"0"}}},"layout":{"type":"default"}} -->
+<main class="wp-block-group" style="background:#FFFFFF">
+
+  <!-- Page Header -->
+  <!-- wp:group {"style":{"color":{"background":"#FAF7F2"},"spacing":{"padding":{"top":"3.5rem","bottom":"3.5rem"}},"border":{"bottom":{"color":"#E5E7EB","style":"solid","width":"1px"}}},"layout":{"type":"constrained"}} -->
+  <div class="wp-block-group" style="background:#FAF7F2;padding-top:3.5rem;padding-bottom:3.5rem;border-bottom:1px solid #E5E7EB">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:1rem">
+      <div>
+        <p style="font-size:0.68rem;font-weight:700;text-transform:uppercase;letter-spacing:0.2em;color:#C9A84C;margin-bottom:0.5rem">Property Listings</p>
+        <h1 style="font-family:var(--wp--preset--font-family--playfair);font-weight:700;font-size:clamp(2rem,4vw,3rem);color:#0A1628;letter-spacing:-0.025em;margin:0">Find Your Property</h1>
+      </div>
+      <p style="font-size:0.875rem;color:#9CA3AF"><strong style="color:#374151">1,200</strong> properties available</p>
+    </div>
+  </div>
+  <!-- /wp:group -->
+
+  <!-- Sticky Top Filter Bar -->
+  <!-- wp:group {"style":{"color":{"background":"#FFFFFF"},"spacing":{"padding":{"top":"1rem","bottom":"1rem"}},"border":{"bottom":{"color":"#E5E7EB","style":"solid","width":"1px"}},"position":{"type":"sticky","top":"72px"}},"layout":{"type":"constrained"}} -->
+  <div class="wp-block-group" style="background:#FFFFFF;padding-top:1rem;padding-bottom:1rem;border-bottom:1px solid #E5E7EB;position:sticky;top:72px;z-index:100">
+    <!-- wp:html -->
+    <div style="display:flex;gap:0.75rem;align-items:center;flex-wrap:wrap">
+      <select style="border:1px solid #E5E7EB;border-radius:6px;padding:0.6rem 1rem;font-size:0.875rem;color:#374151;background:#FEFEFE;outline:none">
+        <option>All Locations</option><option>Brickell</option><option>Coconut Grove</option><option>Coral Gables</option><option>Key Biscayne</option>
+      </select>
+      <select style="border:1px solid #E5E7EB;border-radius:6px;padding:0.6rem 1rem;font-size:0.875rem;color:#374151;background:#FEFEFE;outline:none">
+        <option>All Types</option><option>Luxury Home</option><option>Penthouse</option><option>Villa</option><option>Commercial</option>
+      </select>
+      <select style="border:1px solid #E5E7EB;border-radius:6px;padding:0.6rem 1rem;font-size:0.875rem;color:#374151;background:#FEFEFE;outline:none">
+        <option>Any Price</option><option>Under $2M</option><option>$2M–$5M</option><option>$5M–$10M</option><option>$10M+</option>
+      </select>
+      <select style="border:1px solid #E5E7EB;border-radius:6px;padding:0.6rem 1rem;font-size:0.875rem;color:#374151;background:#FEFEFE;outline:none">
+        <option>Any Beds</option><option>2+ Beds</option><option>3+ Beds</option><option>4+ Beds</option>
+      </select>
+      <button style="background:#0A1628;color:#FFFFFF;border:none;padding:0.6rem 1.5rem;border-radius:6px;font-size:0.82rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;cursor:pointer">Filter</button>
+      <div style="margin-left:auto;display:flex;gap:0.5rem;align-items:center">
+        <span style="font-size:0.82rem;color:#9CA3AF">Sort:</span>
+        <select style="border:1px solid #E5E7EB;border-radius:6px;padding:0.6rem 0.75rem;font-size:0.82rem;color:#374151;background:#FEFEFE;outline:none">
+          <option>Newest First</option><option>Price ↑</option><option>Price ↓</option>
+        </select>
+        <button style="width:36px;height:36px;background:#0A1628;border:none;border-radius:6px;cursor:pointer;font-size:0.875rem;color:#FFFFFF">⊞</button>
+        <button style="width:36px;height:36px;background:#FAF7F2;border:1px solid #E5E7EB;border-radius:6px;cursor:pointer;font-size:0.875rem;color:#374151">☰</button>
+      </div>
+    </div>
+    <!-- /wp:html -->
+  </div>
+  <!-- /wp:group -->
+
+  <!-- Properties List -->
+  <!-- wp:group {"style":{"color":{"background":"#FFFFFF"},"spacing":{"padding":{"top":"2.5rem","bottom":"5rem"}}},"layout":{"type":"constrained"}} -->
+  <div class="wp-block-group" style="padding-top:2.5rem;padding-bottom:5rem">
+    <!-- wp:html -->
+    <div style="display:flex;flex-direction:column;gap:1.25rem">
+
+      <!-- List Card 1 -->
+      <div style="display:grid;grid-template-columns:300px 1fr;background:#FFFFFF;border:1px solid #E5E7EB;border-radius:12px;overflow:hidden;transition:box-shadow 0.3s">
+        <div style="aspect-ratio:4/3;background:linear-gradient(135deg,#D4C4A8,#9CA3AF);position:relative;overflow:hidden">
+          <div style="position:absolute;top:0.75rem;left:0.75rem"><span style="background:#C9A84C;color:#0A1628;font-size:0.65rem;font-weight:700;padding:0.35rem 0.75rem;border-radius:100px">Exclusive</span></div>
+        </div>
+        <div style="padding:2rem;display:flex;flex-direction:column;justify-content:space-between">
+          <div>
+            <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:0.75rem">
+              <div>
+                <p style="font-family:var(--wp--preset--font-family--playfair);font-size:1.6rem;font-weight:700;color:#0A1628;margin:0">$4,850,000</p>
+                <h2 style="font-family:var(--wp--preset--font-family--playfair);font-size:1.2rem;font-weight:700;color:#374151;margin:0.25rem 0 0">Ocean View Penthouse</h2>
+              </div>
+              <span style="background:#F0FDF4;color:#10B981;font-size:0.7rem;font-weight:700;padding:0.35rem 0.75rem;border-radius:100px;white-space:nowrap">For Sale</span>
+            </div>
+            <p style="font-size:0.875rem;color:#9CA3AF;margin-bottom:1.25rem">📍 1200 Brickell Bay Drive, Brickell, Miami, FL 33131</p>
+            <p style="font-size:0.9rem;color:#6B7280;line-height:1.6;margin-bottom:1.25rem">Spectacular full floor penthouse with panoramic bay and city views. Features include a private terrace, smart home system, chef's kitchen with premium appliances, and three ensuite bedrooms.</p>
+          </div>
+          <div>
+            <div style="display:flex;gap:2rem;padding-top:1.25rem;border-top:1px solid #F3F4F6;flex-wrap:wrap">
+              <div style="text-align:center"><p style="font-weight:700;font-size:1rem;color:#0A1628;margin:0">5</p><p style="font-size:0.72rem;text-transform:uppercase;letter-spacing:0.1em;color:#9CA3AF;margin:0">Beds</p></div>
+              <div style="text-align:center"><p style="font-weight:700;font-size:1rem;color:#0A1628;margin:0">4</p><p style="font-size:0.72rem;text-transform:uppercase;letter-spacing:0.1em;color:#9CA3AF;margin:0">Baths</p></div>
+              <div style="text-align:center"><p style="font-weight:700;font-size:1rem;color:#0A1628;margin:0">4,200</p><p style="font-size:0.72rem;text-transform:uppercase;letter-spacing:0.1em;color:#9CA3AF;margin:0">Sq Ft</p></div>
+              <div style="text-align:center"><p style="font-weight:700;font-size:1rem;color:#0A1628;margin:0">2</p><p style="font-size:0.72rem;text-transform:uppercase;letter-spacing:0.1em;color:#9CA3AF;margin:0">Parking</p></div>
+              <div style="margin-left:auto;display:flex;gap:0.75rem;align-items:center">
+                <a href="/properties/ocean-view-penthouse" style="background:#0A1628;color:#FFFFFF;padding:0.75rem 1.75rem;border-radius:4px;font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;text-decoration:none">View Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- List Card 2 -->
+      <div style="display:grid;grid-template-columns:300px 1fr;background:#FFFFFF;border:1px solid #E5E7EB;border-radius:12px;overflow:hidden">
+        <div style="aspect-ratio:4/3;background:linear-gradient(135deg,#C8D8E8,#9B7D2B);position:relative">
+          <div style="position:absolute;top:0.75rem;left:0.75rem"><span style="background:#3A6EA8;color:#FFFFFF;font-size:0.65rem;font-weight:700;padding:0.35rem 0.75rem;border-radius:100px">New Listing</span></div>
+        </div>
+        <div style="padding:2rem;display:flex;flex-direction:column;justify-content:space-between">
+          <div>
+            <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:0.75rem">
+              <div>
+                <p style="font-family:var(--wp--preset--font-family--playfair);font-size:1.6rem;font-weight:700;color:#0A1628;margin:0">$12,500,000</p>
+                <h2 style="font-family:var(--wp--preset--font-family--playfair);font-size:1.2rem;font-weight:700;color:#374151;margin:0.25rem 0 0">Star Island Waterfront Estate</h2>
+              </div>
+              <span style="background:#F0FDF4;color:#10B981;font-size:0.7rem;font-weight:700;padding:0.35rem 0.75rem;border-radius:100px">For Sale</span>
+            </div>
+            <p style="font-size:0.875rem;color:#9CA3AF;margin-bottom:1.25rem">📍 22 Star Island Drive, Star Island, Miami Beach, FL 33139</p>
+            <p style="font-size:0.9rem;color:#6B7280;line-height:1.6;margin-bottom:1.25rem">Iconic waterfront estate on prestigious Star Island. Deepwater dock, infinity pool, cabana, and unobstructed bay views from every room. A true Miami masterpiece.</p>
+          </div>
+          <div style="display:flex;gap:2rem;padding-top:1.25rem;border-top:1px solid #F3F4F6;align-items:center;flex-wrap:wrap">
+            <div style="text-align:center"><p style="font-weight:700;font-size:1rem;color:#0A1628;margin:0">8</p><p style="font-size:0.72rem;text-transform:uppercase;letter-spacing:0.1em;color:#9CA3AF;margin:0">Beds</p></div>
+            <div style="text-align:center"><p style="font-weight:700;font-size:1rem;color:#0A1628;margin:0">7</p><p style="font-size:0.72rem;text-transform:uppercase;letter-spacing:0.1em;color:#9CA3AF;margin:0">Baths</p></div>
+            <div style="text-align:center"><p style="font-weight:700;font-size:1rem;color:#0A1628;margin:0">10,200</p><p style="font-size:0.72rem;text-transform:uppercase;letter-spacing:0.1em;color:#9CA3AF;margin:0">Sq Ft</p></div>
+            <div style="text-align:center"><p style="font-weight:700;font-size:1rem;color:#0A1628;margin:0">4</p><p style="font-size:0.72rem;text-transform:uppercase;letter-spacing:0.1em;color:#9CA3AF;margin:0">Parking</p></div>
+            <div style="margin-left:auto">
+              <a href="/properties/star-island-estate" style="background:#0A1628;color:#FFFFFF;padding:0.75rem 1.75rem;border-radius:4px;font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;text-decoration:none">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- List Card 3 -->
+      <div style="display:grid;grid-template-columns:300px 1fr;background:#FFFFFF;border:1px solid #E5E7EB;border-radius:12px;overflow:hidden">
+        <div style="aspect-ratio:4/3;background:linear-gradient(135deg,#E5E7EB,#C9A84C 80%);position:relative"></div>
+        <div style="padding:2rem;display:flex;flex-direction:column;justify-content:space-between">
+          <div>
+            <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:0.75rem">
+              <div>
+                <p style="font-family:var(--wp--preset--font-family--playfair);font-size:1.6rem;font-weight:700;color:#0A1628;margin:0">$2,295,000</p>
+                <h2 style="font-family:var(--wp--preset--font-family--playfair);font-size:1.2rem;font-weight:700;color:#374151;margin:0.25rem 0 0">Mediterranean Villa</h2>
+              </div>
+              <span style="background:#F0FDF4;color:#10B981;font-size:0.7rem;font-weight:700;padding:0.35rem 0.75rem;border-radius:100px">For Sale</span>
+            </div>
+            <p style="font-size:0.875rem;color:#9CA3AF;margin-bottom:1.25rem">📍 550 Alhambra Circle, Coral Gables, FL 33146</p>
+            <p style="font-size:0.9rem;color:#6B7280;line-height:1.6;margin-bottom:1.25rem">Timeless Mediterranean architecture meets modern interiors. Covered loggia, tropical pool, mature trees, and an oversized lot on one of Coral Gables' most picturesque streets.</p>
+          </div>
+          <div style="display:flex;gap:2rem;padding-top:1.25rem;border-top:1px solid #F3F4F6;align-items:center;flex-wrap:wrap">
+            <div style="text-align:center"><p style="font-weight:700;font-size:1rem;color:#0A1628;margin:0">4</p><p style="font-size:0.72rem;text-transform:uppercase;letter-spacing:0.1em;color:#9CA3AF;margin:0">Beds</p></div>
+            <div style="text-align:center"><p style="font-weight:700;font-size:1rem;color:#0A1628;margin:0">3</p><p style="font-size:0.72rem;text-transform:uppercase;letter-spacing:0.1em;color:#9CA3AF;margin:0">Baths</p></div>
+            <div style="text-align:center"><p style="font-weight:700;font-size:1rem;color:#0A1628;margin:0">3,100</p><p style="font-size:0.72rem;text-transform:uppercase;letter-spacing:0.1em;color:#9CA3AF;margin:0">Sq Ft</p></div>
+            <div style="margin-left:auto">
+              <a href="/properties/mediterranean-villa" style="background:#0A1628;color:#FFFFFF;padding:0.75rem 1.75rem;border-radius:4px;font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;text-decoration:none">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Load More -->
+    <div style="text-align:center;margin-top:3rem">
+      <button style="background:transparent;border:2px solid #0A1628;color:#0A1628;padding:1rem 3rem;border-radius:4px;font-size:0.82rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;cursor:pointer">Load More Properties</button>
+      <p style="font-size:0.82rem;color:#9CA3AF;margin-top:1rem">Showing 6 of 1,200 properties</p>
+    </div>
+    <!-- /wp:html -->
+  </div>
+  <!-- /wp:group -->
+
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer-v2","tagName":"footer"} /-->

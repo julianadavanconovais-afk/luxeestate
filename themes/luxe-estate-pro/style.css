@@ -1,0 +1,789 @@
+/*
+Theme Name: Luxe Estate Pro
+Theme URI:
+Author: Luxe Estate Team
+Description: A premium, block-focused WordPress theme for luxury real estate websites. Includes 17 page types × 3 design variations = 51 complete page layouts. Design styles — Opulent (dark luxury), Pristine (modern minimal), Vanguard (bold contemporary). Built for WordPress Full Site Editing (FSE) with block patterns and custom templates.
+Version: 1.0.0
+Requires at least: 6.3
+Tested up to: 6.6
+Requires PHP: 8.0
+License: GPL-2.0-or-later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: luxe-estate-pro
+Tags: full-site-editing, block-patterns, real-estate, luxury, custom-colors, custom-typography, wide-blocks, three-columns, two-columns, grid-layout, custom-header, custom-footer, featured-images, sticky-post
+*/
+
+/* ================================================================
+   LUXE ESTATE PRO — GLOBAL STYLESHEET
+
+   Design System Overview:
+   ─────────────────────────────────────────────
+   V1 "Opulent"   → Dark luxury: deep navy, gold accents, serifs
+   V2 "Pristine"  → Modern minimal: white/cream, thin lines, space
+   V3 "Vanguard"  → Bold contemporary: black + white, dramatic type
+   ================================================================ */
+
+/* ── Custom Properties ─────────────────────────────────────────── */
+:root {
+	/* Blues / Navy */
+	--luxe-navy-darkest:  #050D1A;
+	--luxe-navy-dark:     #0A1628;
+	--luxe-navy:          #1E3A5F;
+	--luxe-navy-medium:   #2C5282;
+	--luxe-navy-light:    #3A6EA8;
+
+	/* Golds */
+	--luxe-gold-dark:     #9B7D2B;
+	--luxe-gold:          #C9A84C;
+	--luxe-gold-light:    #E6C97A;
+	--luxe-gold-pale:     #F5E8C0;
+
+	/* Creams */
+	--luxe-cream-dark:    #D4C4A8;
+	--luxe-cream:         #F5F0E8;
+	--luxe-cream-light:   #FAF7F2;
+	--luxe-off-white:     #FEFEFE;
+
+	/* Grays */
+	--luxe-charcoal:      #1A2332;
+	--luxe-gray-dark:     #374151;
+	--luxe-gray:          #6B7280;
+	--luxe-gray-medium:   #9CA3AF;
+	--luxe-gray-light:    #E5E7EB;
+	--luxe-gray-pale:     #F9FAFB;
+
+	/* Neutrals */
+	--luxe-black:         #0A0A0A;
+	--luxe-white:         #FFFFFF;
+
+	/* Accents */
+	--luxe-teal:          #0D9488;
+	--luxe-success:       #10B981;
+	--luxe-warning:       #F59E0B;
+	--luxe-error:         #EF4444;
+
+	/* Typography */
+	--font-serif:   'Playfair Display', 'Georgia', serif;
+	--font-sans:    'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+	--font-accent:  'Cormorant Garamond', 'Garamond', serif;
+
+	/* Spacing Scale */
+	--space-2xs: 0.25rem;
+	--space-xs:  0.5rem;
+	--space-sm:  1rem;
+	--space-md:  1.5rem;
+	--space-lg:  2rem;
+	--space-xl:  3rem;
+	--space-2xl: 4rem;
+	--space-3xl: 6rem;
+	--space-4xl: 8rem;
+	--space-5xl: 12rem;
+
+	/* Border Radius */
+	--radius-xs:   2px;
+	--radius-sm:   4px;
+	--radius-md:   8px;
+	--radius-lg:   16px;
+	--radius-xl:   24px;
+	--radius-2xl:  32px;
+	--radius-full: 9999px;
+
+	/* Shadows */
+	--shadow-xs:   0 1px 2px rgba(0,0,0,0.08);
+	--shadow-sm:   0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.08);
+	--shadow-md:   0 4px 6px rgba(0,0,0,0.07), 0 2px 4px rgba(0,0,0,0.06);
+	--shadow-lg:   0 10px 15px rgba(0,0,0,0.1), 0 4px 6px rgba(0,0,0,0.05);
+	--shadow-xl:   0 20px 25px rgba(0,0,0,0.1), 0 10px 10px rgba(0,0,0,0.04);
+	--shadow-2xl:  0 25px 50px rgba(0,0,0,0.25);
+	--shadow-gold: 0 4px 20px rgba(201,168,76,0.35);
+	--shadow-navy: 0 4px 20px rgba(10,22,40,0.5);
+
+	/* Transitions */
+	--transition-fast:   150ms ease;
+	--transition-base:   250ms ease;
+	--transition-slow:   400ms ease;
+}
+
+/* ── Base Reset ─────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+	font-family: var(--font-sans);
+	color: var(--luxe-charcoal);
+	background-color: var(--luxe-white);
+	line-height: 1.65;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+a   { transition: color var(--transition-base); }
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: var(--font-serif);
+	font-weight: 700;
+	line-height: 1.15;
+	letter-spacing: -0.025em;
+}
+
+/* ── Utility: Section Labels ────────────────────────────────────── */
+.luxe-eyebrow {
+	display: inline-block;
+	font-family: var(--font-sans);
+	font-size: 0.7rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.18em;
+	color: var(--luxe-gold);
+	margin-bottom: 0.75rem;
+}
+
+.luxe-eyebrow--light { color: var(--luxe-gold-light); }
+.luxe-eyebrow--dark  { color: var(--luxe-navy); }
+
+/* ── Utility: Gold Divider ──────────────────────────────────────── */
+.luxe-divider {
+	width: 56px;
+	height: 3px;
+	background: var(--luxe-gold);
+	margin: 0 0 1.5rem;
+	border: none;
+}
+.luxe-divider--center { margin: 0 auto 1.5rem; }
+.luxe-divider--light  { background: var(--luxe-gold-light); }
+.luxe-divider--white  { background: var(--luxe-white); }
+
+/* ── Utility: Tags / Badges ─────────────────────────────────────── */
+.luxe-tag {
+	display: inline-block;
+	font-size: 0.7rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	padding: 0.35em 0.9em;
+	border-radius: var(--radius-full);
+}
+
+.luxe-tag--gold    { background: var(--luxe-gold);    color: var(--luxe-navy-dark); }
+.luxe-tag--navy    { background: var(--luxe-navy);    color: var(--luxe-white); }
+.luxe-tag--success { background: var(--luxe-success); color: var(--luxe-white); }
+.luxe-tag--white   { background: var(--luxe-white);   color: var(--luxe-navy-dark); }
+.luxe-tag--outline-gold {
+	background: transparent;
+	color: var(--luxe-gold);
+	border: 1.5px solid var(--luxe-gold);
+}
+
+/* ── Property Cards ─────────────────────────────────────────────── */
+.luxe-property-card {
+	border-radius: var(--radius-lg);
+	overflow: hidden;
+	background: var(--luxe-white);
+	transition: transform var(--transition-base), box-shadow var(--transition-base);
+	position: relative;
+}
+.luxe-property-card:hover {
+	transform: translateY(-5px);
+	box-shadow: var(--shadow-xl);
+}
+.luxe-property-card__image {
+	position: relative;
+	overflow: hidden;
+	aspect-ratio: 4 / 3;
+}
+.luxe-property-card__image img {
+	width: 100%; height: 100%;
+	object-fit: cover;
+	transition: transform var(--transition-slow);
+}
+.luxe-property-card:hover .luxe-property-card__image img {
+	transform: scale(1.05);
+}
+.luxe-property-card__badges {
+	position: absolute;
+	top: 1rem; left: 1rem; right: 1rem;
+	display: flex; justify-content: space-between; align-items: flex-start;
+}
+.luxe-property-card__body {
+	padding: 1.5rem;
+}
+.luxe-property-card__price {
+	font-family: var(--font-serif);
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: var(--luxe-navy-dark);
+	margin-bottom: 0.25rem;
+}
+.luxe-property-card__price--gold { color: var(--luxe-gold); }
+.luxe-property-card__title {
+	font-size: 1.1rem;
+	font-weight: 600;
+	margin-bottom: 0.25rem;
+	color: var(--luxe-charcoal);
+}
+.luxe-property-card__location {
+	font-size: 0.875rem;
+	color: var(--luxe-gray);
+	margin-bottom: 1rem;
+}
+.luxe-property-card__features {
+	display: flex;
+	gap: 1rem;
+	padding-top: 1rem;
+	border-top: 1px solid var(--luxe-gray-light);
+}
+.luxe-property-card__feature {
+	display: flex; align-items: center; gap: 0.375rem;
+	font-size: 0.8rem; color: var(--luxe-gray-dark);
+}
+
+/* Dark card variant (V1 / Opulent) */
+.luxe-property-card--dark {
+	background: #112240;
+	border: 1px solid rgba(201,168,76,0.15);
+}
+.luxe-property-card--dark .luxe-property-card__price  { color: var(--luxe-gold-light); }
+.luxe-property-card--dark .luxe-property-card__title  { color: var(--luxe-white); }
+.luxe-property-card--dark .luxe-property-card__location { color: var(--luxe-gray-medium); }
+.luxe-property-card--dark .luxe-property-card__features { border-top-color: rgba(255,255,255,0.1); }
+.luxe-property-card--dark .luxe-property-card__feature  { color: var(--luxe-gray-medium); }
+
+/* Bold card variant (V3 / Vanguard) */
+.luxe-property-card--bold {
+	background: var(--luxe-black);
+	border: 1px solid rgba(255,255,255,0.08);
+}
+.luxe-property-card--bold .luxe-property-card__price  { color: var(--luxe-gold); }
+.luxe-property-card--bold .luxe-property-card__title  { color: var(--luxe-white); }
+.luxe-property-card--bold .luxe-property-card__location { color: var(--luxe-gray-medium); }
+.luxe-property-card--bold .luxe-property-card__features { border-top-color: rgba(255,255,255,0.08); }
+.luxe-property-card--bold .luxe-property-card__feature  { color: var(--luxe-gray-medium); }
+
+/* ── Agent Cards ────────────────────────────────────────────────── */
+.luxe-agent-card {
+	text-align: center;
+	transition: transform var(--transition-base);
+}
+.luxe-agent-card:hover { transform: translateY(-4px); }
+.luxe-agent-card__photo {
+	width: 110px; height: 110px;
+	border-radius: 50%;
+	object-fit: cover;
+	margin: 0 auto 1rem;
+	border: 3px solid var(--luxe-gold);
+}
+.luxe-agent-card__name {
+	font-family: var(--font-serif);
+	font-size: 1.1rem;
+	font-weight: 700;
+	margin-bottom: 0.25rem;
+}
+.luxe-agent-card__title {
+	font-size: 0.8rem;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	color: var(--luxe-gold);
+	margin-bottom: 0.5rem;
+}
+.luxe-agent-card__contact {
+	font-size: 0.875rem;
+	color: var(--luxe-gray);
+}
+
+/* ── Stats ──────────────────────────────────────────────────────── */
+.luxe-stat {
+	text-align: center;
+}
+.luxe-stat__number {
+	font-family: var(--font-serif);
+	font-size: 3.5rem;
+	font-weight: 700;
+	line-height: 1;
+	color: var(--luxe-gold);
+	display: block;
+}
+.luxe-stat__label {
+	font-size: 0.8rem;
+	text-transform: uppercase;
+	letter-spacing: 0.12em;
+	color: var(--luxe-gray-medium);
+	margin-top: 0.4rem;
+}
+
+/* ── Buttons ────────────────────────────────────────────────────── */
+.luxe-btn {
+	display: inline-block;
+	font-family: var(--font-sans);
+	font-weight: 700;
+	font-size: 0.8rem;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	text-decoration: none;
+	border: none;
+	cursor: pointer;
+	transition: all var(--transition-base);
+	border-radius: var(--radius-sm);
+}
+.luxe-btn--primary {
+	background: var(--luxe-gold);
+	color: var(--luxe-navy-dark);
+	padding: 1rem 2.5rem;
+}
+.luxe-btn--primary:hover {
+	background: var(--luxe-gold-light);
+	box-shadow: var(--shadow-gold);
+	transform: translateY(-1px);
+}
+.luxe-btn--outline-gold {
+	background: transparent;
+	color: var(--luxe-gold);
+	padding: 0.875rem 2.25rem;
+	border: 2px solid var(--luxe-gold);
+}
+.luxe-btn--outline-gold:hover {
+	background: var(--luxe-gold);
+	color: var(--luxe-navy-dark);
+}
+.luxe-btn--outline-white {
+	background: transparent;
+	color: var(--luxe-white);
+	padding: 0.875rem 2.25rem;
+	border: 2px solid var(--luxe-white);
+}
+.luxe-btn--outline-white:hover {
+	background: var(--luxe-white);
+	color: var(--luxe-navy-dark);
+}
+.luxe-btn--navy {
+	background: var(--luxe-navy);
+	color: var(--luxe-white);
+	padding: 1rem 2.5rem;
+}
+.luxe-btn--navy:hover {
+	background: var(--luxe-navy-medium);
+}
+.luxe-btn--lg {
+	font-size: 0.875rem;
+	padding: 1.25rem 3rem;
+}
+.luxe-btn--sm {
+	font-size: 0.75rem;
+	padding: 0.6rem 1.5rem;
+}
+
+/* ── Search Bar ─────────────────────────────────────────────────── */
+.luxe-search-form {
+	display: flex;
+	background: var(--luxe-white);
+	border-radius: var(--radius-md);
+	overflow: hidden;
+	box-shadow: var(--shadow-xl);
+}
+.luxe-search-form__field {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	padding: 1rem 1.5rem;
+	border-right: 1px solid var(--luxe-gray-light);
+}
+.luxe-search-form__field label {
+	font-size: 0.65rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.12em;
+	color: var(--luxe-gray);
+	margin-bottom: 0.25rem;
+}
+.luxe-search-form__field select,
+.luxe-search-form__field input {
+	border: none;
+	outline: none;
+	font-size: 0.95rem;
+	font-family: var(--font-sans);
+	color: var(--luxe-charcoal);
+	background: transparent;
+	padding: 0;
+	cursor: pointer;
+}
+.luxe-search-form__submit {
+	background: var(--luxe-gold);
+	color: var(--luxe-navy-dark);
+	border: none;
+	padding: 0 2.5rem;
+	font-family: var(--font-sans);
+	font-size: 0.8rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	cursor: pointer;
+	transition: background var(--transition-base);
+	white-space: nowrap;
+}
+.luxe-search-form__submit:hover { background: var(--luxe-gold-light); }
+
+/* Stacked search (mobile / V1) */
+.luxe-search-form--stacked {
+	flex-direction: column;
+	gap: 1rem;
+	background: none;
+	box-shadow: none;
+}
+.luxe-search-form--stacked .luxe-search-form__field {
+	background: white;
+	border-right: none;
+	border-radius: var(--radius-md);
+	box-shadow: var(--shadow-sm);
+}
+
+/* ── Navigation ─────────────────────────────────────────────────── */
+/* V1 — Opulent: dark translucent */
+.luxe-nav-opulent {
+	background: rgba(5, 13, 26, 0.96);
+	backdrop-filter: blur(12px);
+	border-bottom: 1px solid rgba(201,168,76,0.15);
+}
+.luxe-nav-opulent .wp-block-navigation__responsive-container-open,
+.luxe-nav-opulent .wp-block-navigation-item__content {
+	color: var(--luxe-cream-light);
+}
+.luxe-nav-opulent a:hover { color: var(--luxe-gold-light) !important; }
+
+/* V2 — Pristine: white with thin border */
+.luxe-nav-pristine {
+	background: rgba(255,255,255,0.98);
+	backdrop-filter: blur(8px);
+	border-bottom: 1px solid var(--luxe-gray-light);
+}
+
+/* V3 — Vanguard: fully transparent */
+.luxe-nav-vanguard {
+	background: transparent;
+	border-bottom: 1px solid rgba(255,255,255,0.08);
+	position: absolute;
+	width: 100%;
+	z-index: 100;
+}
+.luxe-nav-vanguard .wp-block-navigation-item__content {
+	color: var(--luxe-white);
+}
+
+/* ── Form Styles ────────────────────────────────────────────────── */
+.luxe-form {
+	display: flex;
+	flex-direction: column;
+	gap: 1.25rem;
+}
+.luxe-form__group { display: flex; flex-direction: column; gap: 0.4rem; }
+.luxe-form__row   { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+.luxe-form__label {
+	font-size: 0.8rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	color: var(--luxe-gray-dark);
+}
+.luxe-form__label--light { color: var(--luxe-gray-medium); }
+.luxe-form__input {
+	padding: 0.875rem 1rem;
+	border: 1px solid var(--luxe-gray-light);
+	border-radius: var(--radius-sm);
+	font-size: 0.95rem;
+	font-family: var(--font-sans);
+	color: var(--luxe-charcoal);
+	transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+	background: var(--luxe-white);
+}
+.luxe-form__input:focus {
+	outline: none;
+	border-color: var(--luxe-gold);
+	box-shadow: 0 0 0 3px rgba(201,168,76,0.15);
+}
+.luxe-form__input--dark {
+	background: rgba(255,255,255,0.07);
+	border-color: rgba(255,255,255,0.15);
+	color: var(--luxe-white);
+}
+.luxe-form__input--dark:focus {
+	border-color: var(--luxe-gold);
+	box-shadow: 0 0 0 3px rgba(201,168,76,0.2);
+}
+.luxe-form__textarea { resize: vertical; min-height: 150px; }
+
+/* ── Section Spacing Helpers ────────────────────────────────────── */
+.luxe-section { padding: var(--space-4xl) 0; }
+.luxe-section--sm { padding: var(--space-2xl) 0; }
+.luxe-section--lg { padding: var(--space-5xl) 0; }
+
+.luxe-container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+.luxe-container--wide { max-width: 1400px; }
+.luxe-container--narrow { max-width: 900px; }
+
+/* ── Testimonial Cards ──────────────────────────────────────────── */
+.luxe-testimonial {
+	padding: 2rem;
+	border-radius: var(--radius-lg);
+	position: relative;
+}
+.luxe-testimonial::before {
+	content: '\201C';
+	font-family: var(--font-serif);
+	font-size: 5rem;
+	line-height: 0.8;
+	color: var(--luxe-gold);
+	display: block;
+	margin-bottom: 0.5rem;
+	opacity: 0.6;
+}
+.luxe-testimonial__text {
+	font-family: var(--font-accent);
+	font-size: 1.15rem;
+	font-style: italic;
+	line-height: 1.7;
+	margin-bottom: 1.5rem;
+}
+.luxe-testimonial__author {
+	display: flex; align-items: center; gap: 0.75rem;
+}
+.luxe-testimonial__author-photo {
+	width: 48px; height: 48px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+.luxe-testimonial__author-name { font-weight: 700; font-size: 0.9rem; }
+.luxe-testimonial__author-role { font-size: 0.8rem; color: var(--luxe-gray); }
+.luxe-testimonial__stars {
+	color: var(--luxe-gold);
+	font-size: 0.875rem;
+	margin-bottom: 1rem;
+}
+
+/* Dark testimonial (V1) */
+.luxe-testimonial--dark {
+	background: #112240;
+	border: 1px solid rgba(201,168,76,0.12);
+}
+.luxe-testimonial--dark .luxe-testimonial__text { color: var(--luxe-cream-light); }
+.luxe-testimonial--dark .luxe-testimonial__author-name { color: var(--luxe-white); }
+.luxe-testimonial--dark .luxe-testimonial__author-role { color: var(--luxe-gray-medium); }
+
+/* Light testimonial (V2) */
+.luxe-testimonial--light {
+	background: var(--luxe-white);
+	border: 1px solid var(--luxe-gray-light);
+	box-shadow: var(--shadow-md);
+}
+
+/* Bold testimonial (V3) */
+.luxe-testimonial--bold {
+	background: #111;
+	border: 1px solid rgba(255,255,255,0.06);
+}
+.luxe-testimonial--bold .luxe-testimonial__text { color: var(--luxe-cream); }
+.luxe-testimonial--bold .luxe-testimonial__author-name { color: var(--luxe-white); }
+
+/* ── FAQ Accordion ──────────────────────────────────────────────── */
+.luxe-faq-item {
+	border-bottom: 1px solid var(--luxe-gray-light);
+}
+.luxe-faq-item--dark { border-bottom-color: rgba(255,255,255,0.08); }
+
+.luxe-faq__question {
+	display: flex; justify-content: space-between; align-items: center;
+	padding: 1.5rem 0;
+	font-family: var(--font-serif);
+	font-size: 1.05rem;
+	font-weight: 700;
+	cursor: pointer;
+	color: var(--luxe-charcoal);
+}
+.luxe-faq__question--light { color: var(--luxe-white); }
+
+.luxe-faq__icon {
+	width: 28px; height: 28px;
+	border-radius: 50%;
+	background: var(--luxe-gold);
+	color: var(--luxe-navy-dark);
+	display: flex; align-items: center; justify-content: center;
+	font-size: 1rem; font-weight: 700; flex-shrink: 0;
+}
+
+.luxe-faq__answer {
+	font-size: 0.95rem;
+	line-height: 1.7;
+	color: var(--luxe-gray-dark);
+	padding-bottom: 1.5rem;
+}
+.luxe-faq__answer--light { color: var(--luxe-gray-medium); }
+
+/* ── Neighborhood Cards ─────────────────────────────────────────── */
+.luxe-neighborhood-card {
+	position: relative;
+	border-radius: var(--radius-lg);
+	overflow: hidden;
+	aspect-ratio: 3 / 2;
+	cursor: pointer;
+}
+.luxe-neighborhood-card__overlay {
+	position: absolute; inset: 0;
+	background: linear-gradient(180deg, transparent 30%, rgba(5,13,26,0.85) 100%);
+	transition: opacity var(--transition-base);
+}
+.luxe-neighborhood-card:hover .luxe-neighborhood-card__overlay {
+	opacity: 0.7;
+}
+.luxe-neighborhood-card__content {
+	position: absolute;
+	bottom: 0; left: 0; right: 0;
+	padding: 1.5rem;
+}
+.luxe-neighborhood-card__name {
+	font-family: var(--font-serif);
+	font-size: 1.3rem;
+	font-weight: 700;
+	color: var(--luxe-white);
+	margin-bottom: 0.25rem;
+}
+.luxe-neighborhood-card__count {
+	font-size: 0.8rem;
+	color: var(--luxe-gold-light);
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+
+/* ── Blog Post Cards ────────────────────────────────────────────── */
+.luxe-post-card {
+	border-radius: var(--radius-lg);
+	overflow: hidden;
+	background: var(--luxe-white);
+	transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+.luxe-post-card:hover {
+	transform: translateY(-4px);
+	box-shadow: var(--shadow-lg);
+}
+.luxe-post-card__image {
+	aspect-ratio: 16 / 9;
+	overflow: hidden;
+}
+.luxe-post-card__image img {
+	width: 100%; height: 100%;
+	object-fit: cover;
+	transition: transform var(--transition-slow);
+}
+.luxe-post-card:hover .luxe-post-card__image img { transform: scale(1.04); }
+.luxe-post-card__body { padding: 1.5rem; }
+.luxe-post-card__category {
+	font-size: 0.7rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.15em;
+	color: var(--luxe-gold);
+	margin-bottom: 0.5rem;
+}
+.luxe-post-card__title {
+	font-family: var(--font-serif);
+	font-size: 1.15rem;
+	font-weight: 700;
+	line-height: 1.3;
+	color: var(--luxe-charcoal);
+	margin-bottom: 0.75rem;
+}
+.luxe-post-card__excerpt {
+	font-size: 0.875rem;
+	color: var(--luxe-gray);
+	line-height: 1.6;
+	margin-bottom: 1rem;
+}
+.luxe-post-card__meta {
+	display: flex; align-items: center; gap: 1rem;
+	font-size: 0.8rem; color: var(--luxe-gray-medium);
+	padding-top: 1rem;
+	border-top: 1px solid var(--luxe-gray-light);
+}
+
+/* ── Mortgage Calculator ────────────────────────────────────────── */
+.luxe-calculator {
+	background: var(--luxe-white);
+	border-radius: var(--radius-xl);
+	padding: 2.5rem;
+	box-shadow: var(--shadow-xl);
+}
+.luxe-calculator--dark {
+	background: #0E1F38;
+	border: 1px solid rgba(201,168,76,0.15);
+	box-shadow: none;
+}
+.luxe-calculator__label {
+	font-size: 0.8rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	color: var(--luxe-gray-dark);
+	display: block;
+	margin-bottom: 0.4rem;
+}
+.luxe-calculator__label--light { color: var(--luxe-gray-medium); }
+.luxe-calculator__range {
+	width: 100%;
+	appearance: none;
+	height: 4px;
+	border-radius: 2px;
+	background: var(--luxe-gray-light);
+	outline: none;
+	margin: 0.75rem 0;
+}
+.luxe-calculator__range::-webkit-slider-thumb {
+	appearance: none;
+	width: 20px; height: 20px;
+	border-radius: 50%;
+	background: var(--luxe-gold);
+	cursor: pointer;
+	box-shadow: var(--shadow-sm);
+}
+.luxe-calculator__result {
+	background: var(--luxe-navy-dark);
+	border-radius: var(--radius-lg);
+	padding: 2rem;
+	text-align: center;
+	color: var(--luxe-white);
+}
+.luxe-calculator__result-amount {
+	font-family: var(--font-serif);
+	font-size: 3rem;
+	font-weight: 700;
+	color: var(--luxe-gold);
+	display: block;
+}
+.luxe-calculator__result-label {
+	font-size: 0.8rem;
+	text-transform: uppercase;
+	letter-spacing: 0.12em;
+	color: var(--luxe-gray-medium);
+	margin-top: 0.25rem;
+}
+
+/* ── Responsive ─────────────────────────────────────────────────── */
+@media (max-width: 1024px) {
+	.luxe-form__row { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+	.luxe-search-form {
+		flex-direction: column;
+		border-radius: var(--radius-lg);
+	}
+	.luxe-search-form__field {
+		border-right: none;
+		border-bottom: 1px solid var(--luxe-gray-light);
+	}
+	.luxe-search-form__submit {
+		padding: 1.25rem;
+		text-align: center;
+	}
+	.luxe-stat__number { font-size: 2.75rem; }
+	.luxe-section { padding: var(--space-3xl) 0; }
+}
+
+@media (max-width: 480px) {
+	.luxe-stat__number { font-size: 2.25rem; }
+}
