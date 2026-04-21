@@ -1,0 +1,127 @@
+<!-- Mortgage Calculator V3: VANGUARD — Bold dark calculator with big output -->
+<!-- wp:template-part {"slug":"header-v3","tagName":"header"} /-->
+<!-- wp:group {"tagName":"main","style":{"color":{"background":"#0A0A0A"},"spacing":{"padding":{"top":"0","bottom":"0"}}},"layout":{"type":"default"}} -->
+<main class="wp-block-group" style="background:#0A0A0A">
+
+  <!-- Header -->
+  <!-- wp:group {"style":{"color":{"background":"#0A0A0A"},"spacing":{"padding":{"top":"7rem","bottom":"4rem"}},"border":{"bottom":{"color":"rgba(255,255,255,0.05)","style":"solid","width":"1px"}}},"layout":{"type":"constrained"}} -->
+  <div class="wp-block-group" style="background:#0A0A0A;padding-top:7rem;padding-bottom:4rem;border-bottom:1px solid rgba(255,255,255,0.05)">
+    <div style="position:absolute;top:0;left:0;right:0;height:4px;background:#C9A84C"></div>
+    <p style="font-size:0.65rem;font-weight:900;text-transform:uppercase;letter-spacing:0.3em;color:#C9A84C;margin-bottom:1.5rem">Financial Planning</p>
+    <h1 style="font-family:var(--wp--preset--font-family--playfair);font-weight:700;font-size:clamp(3rem,6vw,5rem);color:#FFFFFF;line-height:0.9;letter-spacing:-0.04em;margin:0">MORTGAGE<br><em style="color:#C9A84C">CALCULATOR</em></h1>
+  </div>
+  <!-- /wp:group -->
+
+  <!-- Full-width calculator grid -->
+  <!-- wp:group {"style":{"color":{"background":"#0A0A0A"},"spacing":{"padding":{"top":"4rem","bottom":"5rem"}}},"layout":{"type":"constrained"}} -->
+  <div class="wp-block-group" style="padding-top:4rem;padding-bottom:5rem">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(255,255,255,0.05);margin-bottom:1px">
+
+      <!-- Inputs -->
+      <div style="background:#0A0A0A;padding:3rem">
+        <div style="display:flex;flex-direction:column;gap:2rem">
+
+          <div>
+            <div style="display:flex;justify-content:space-between;margin-bottom:0.75rem">
+              <label style="font-size:0.62rem;font-weight:900;text-transform:uppercase;letter-spacing:0.2em;color:rgba(255,255,255,0.4)">Property Price</label>
+            </div>
+            <div style="position:relative">
+              <span style="position:absolute;left:1.25rem;top:50%;transform:translateY(-50%);color:#C9A84C;font-weight:700;font-size:1.1rem">$</span>
+              <input type="number" value="3500000" style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);padding:1.1rem 1.25rem 1.1rem 2.5rem;color:#FFFFFF;font-size:1.25rem;font-weight:700;outline:none;width:100%;box-sizing:border-box;letter-spacing:-0.02em" />
+            </div>
+          </div>
+
+          <div>
+            <div style="display:flex;justify-content:space-between;margin-bottom:0.75rem">
+              <label style="font-size:0.62rem;font-weight:900;text-transform:uppercase;letter-spacing:0.2em;color:rgba(255,255,255,0.4)">Down Payment</label>
+              <span style="font-size:0.9rem;color:#C9A84C;font-weight:700">20% · $700K</span>
+            </div>
+            <input type="range" min="10" max="50" value="20" style="width:100%;accent-color:#C9A84C;height:4px" />
+          </div>
+
+          <div>
+            <label style="font-size:0.62rem;font-weight:900;text-transform:uppercase;letter-spacing:0.2em;color:rgba(255,255,255,0.4);display:block;margin-bottom:0.75rem">Loan Term</label>
+            <div style="display:flex;gap:1px;background:rgba(255,255,255,0.05)">
+              <button style="flex:1;background:#C9A84C;color:#0A0A0A;border:none;padding:0.875rem;font-size:0.82rem;font-weight:900;cursor:pointer;text-transform:uppercase;letter-spacing:0.08em">30yr</button>
+              <button style="flex:1;background:transparent;color:rgba(255,255,255,0.4);border:none;padding:0.875rem;font-size:0.82rem;font-weight:700;cursor:pointer;text-transform:uppercase;letter-spacing:0.08em">20yr</button>
+              <button style="flex:1;background:transparent;color:rgba(255,255,255,0.4);border:none;padding:0.875rem;font-size:0.82rem;font-weight:700;cursor:pointer;text-transform:uppercase;letter-spacing:0.08em">15yr</button>
+            </div>
+          </div>
+
+          <div>
+            <div style="display:flex;justify-content:space-between;margin-bottom:0.75rem">
+              <label style="font-size:0.62rem;font-weight:900;text-transform:uppercase;letter-spacing:0.2em;color:rgba(255,255,255,0.4)">Interest Rate</label>
+              <span style="font-size:0.9rem;color:#C9A84C;font-weight:700">6.75%</span>
+            </div>
+            <input type="range" min="3" max="12" step="0.25" value="6.75" style="width:100%;accent-color:#C9A84C;height:4px" />
+          </div>
+
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
+            <div>
+              <label style="font-size:0.62rem;font-weight:900;text-transform:uppercase;letter-spacing:0.2em;color:rgba(255,255,255,0.4);display:block;margin-bottom:0.75rem">Annual Tax</label>
+              <div style="position:relative">
+                <span style="position:absolute;left:1rem;top:50%;transform:translateY(-50%);color:#C9A84C;font-size:0.9rem">$</span>
+                <input type="number" value="42000" style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);padding:0.875rem 1rem 0.875rem 2rem;color:#FFFFFF;font-size:0.9rem;outline:none;width:100%;box-sizing:border-box" />
+              </div>
+            </div>
+            <div>
+              <label style="font-size:0.62rem;font-weight:900;text-transform:uppercase;letter-spacing:0.2em;color:rgba(255,255,255,0.4);display:block;margin-bottom:0.75rem">Monthly HOA</label>
+              <div style="position:relative">
+                <span style="position:absolute;left:1rem;top:50%;transform:translateY(-50%);color:#C9A84C;font-size:0.9rem">$</span>
+                <input type="number" value="1200" style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);padding:0.875rem 1rem 0.875rem 2rem;color:#FFFFFF;font-size:0.9rem;outline:none;width:100%;box-sizing:border-box" />
+              </div>
+            </div>
+          </div>
+
+          <button style="background:#C9A84C;color:#0A0A0A;border:none;padding:1.1rem;font-size:0.82rem;font-weight:900;text-transform:uppercase;letter-spacing:0.15em;cursor:pointer">Calculate →</button>
+        </div>
+      </div>
+
+      <!-- Output -->
+      <div style="background:#111111;padding:3rem;display:flex;flex-direction:column;justify-content:center">
+        <p style="font-size:0.62rem;font-weight:900;text-transform:uppercase;letter-spacing:0.25em;color:#C9A84C;margin-bottom:1.5rem">Monthly Payment</p>
+        <p style="font-family:var(--wp--preset--font-family--playfair);font-weight:700;font-size:clamp(3rem,5vw,5rem);color:#FFFFFF;margin:0;line-height:0.9;letter-spacing:-0.04em">$22,847</p>
+        <div style="width:60px;height:3px;background:#C9A84C;margin:1.5rem 0"></div>
+        <p style="font-size:0.875rem;color:rgba(255,255,255,0.35);margin-bottom:2.5rem">All-in estimate including principal, interest, tax, HOA, and insurance</p>
+
+        <!-- Bar chart placeholder -->
+        <div style="display:flex;flex-direction:column;gap:0.75rem;margin-bottom:2.5rem">
+          <div>
+            <div style="display:flex;justify-content:space-between;margin-bottom:0.25rem">
+              <span style="font-size:0.72rem;color:rgba(255,255,255,0.4)">Principal &amp; Interest</span>
+              <span style="font-size:0.72rem;color:#FFFFFF;font-weight:700">$18,147</span>
+            </div>
+            <div style="height:6px;background:rgba(255,255,255,0.08);border-radius:3px">
+              <div style="height:100%;width:79%;background:#C9A84C;border-radius:3px"></div>
+            </div>
+          </div>
+          <div>
+            <div style="display:flex;justify-content:space-between;margin-bottom:0.25rem">
+              <span style="font-size:0.72rem;color:rgba(255,255,255,0.4)">Property Tax</span>
+              <span style="font-size:0.72rem;color:#FFFFFF;font-weight:700">$3,500</span>
+            </div>
+            <div style="height:6px;background:rgba(255,255,255,0.08);border-radius:3px">
+              <div style="height:100%;width:15%;background:rgba(201,168,76,0.5);border-radius:3px"></div>
+            </div>
+          </div>
+          <div>
+            <div style="display:flex;justify-content:space-between;margin-bottom:0.25rem">
+              <span style="font-size:0.72rem;color:rgba(255,255,255,0.4)">HOA &amp; Insurance</span>
+              <span style="font-size:0.72rem;color:#FFFFFF;font-weight:700">$1,200</span>
+            </div>
+            <div style="height:6px;background:rgba(255,255,255,0.08);border-radius:3px">
+              <div style="height:100%;width:5%;background:rgba(201,168,76,0.3);border-radius:3px"></div>
+            </div>
+          </div>
+        </div>
+
+        <a href="/contact?inquiry=mortgage" style="display:block;background:#C9A84C;color:#0A0A0A;padding:1.1rem;font-size:0.82rem;font-weight:900;text-transform:uppercase;letter-spacing:0.15em;text-decoration:none;text-align:center">Get Pre-Approved →</a>
+      </div>
+
+    </div>
+  </div>
+  <!-- /wp:group -->
+
+</main>
+<!-- /wp:group -->
+<!-- wp:template-part {"slug":"footer-v3","tagName":"footer"} /-->

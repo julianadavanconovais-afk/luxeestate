@@ -1,0 +1,131 @@
+<!-- Mortgage Calculator V1: OPULENT — Dark luxury financial tool -->
+<!-- wp:template-part {"slug":"header-v1","tagName":"header"} /-->
+<!-- wp:group {"tagName":"main","style":{"color":{"background":"#0A1628"},"spacing":{"padding":{"top":"0","bottom":"0"}}},"layout":{"type":"default"}} -->
+<main class="wp-block-group" style="background:#0A1628">
+
+  <!-- Hero -->
+  <!-- wp:group {"style":{"color":{"background":"#050D1A"},"spacing":{"padding":{"top":"4rem","bottom":"4rem"}},"border":{"bottom":{"color":"rgba(201,168,76,0.1)","style":"solid","width":"1px"}}},"layout":{"type":"constrained"}} -->
+  <div class="wp-block-group" style="background:#050D1A;padding-top:4rem;padding-bottom:4rem;border-bottom:1px solid rgba(201,168,76,0.1);text-align:center">
+    <p style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.2em;color:#C9A84C;margin-bottom:0.75rem">Financial Planning</p>
+    <h1 style="font-family:var(--wp--preset--font-family--playfair);font-weight:700;font-size:clamp(2rem,4vw,3.25rem);color:#FFFFFF;letter-spacing:-0.03em;margin-bottom:0.75rem">Mortgage Calculator</h1>
+    <p style="font-size:0.9rem;color:#9CA3AF;max-width:480px;margin:0 auto">Estimate your monthly payments and explore financing options for Miami's luxury properties.</p>
+  </div>
+  <!-- /wp:group -->
+
+  <!-- Calculator + Results -->
+  <!-- wp:group {"style":{"color":{"background":"#0A1628"},"spacing":{"padding":{"top":"4rem","bottom":"5rem"}}},"layout":{"type":"constrained"}} -->
+  <div class="wp-block-group" style="padding-top:4rem;padding-bottom:5rem">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start">
+
+      <!-- Calculator inputs -->
+      <div style="background:#112240;border:1px solid rgba(201,168,76,0.1);border-radius:16px;padding:2.5rem">
+        <h2 style="font-family:var(--wp--preset--font-family--playfair);font-size:1.35rem;font-weight:700;color:#FFFFFF;margin-bottom:2rem">Calculate Your Payment</h2>
+
+        <div style="display:flex;flex-direction:column;gap:1.5rem">
+          <div>
+            <label style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:#9CA3AF;display:block;margin-bottom:0.5rem">Property Price</label>
+            <div style="position:relative">
+              <span style="position:absolute;left:1rem;top:50%;transform:translateY(-50%);color:#C9A84C;font-weight:700">$</span>
+              <input type="number" value="3500000" style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:6px;padding:0.875rem 1rem 0.875rem 2rem;color:#FFFFFF;font-size:1rem;font-weight:600;outline:none;width:100%;box-sizing:border-box" />
+            </div>
+          </div>
+
+          <div>
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.5rem">
+              <label style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:#9CA3AF">Down Payment</label>
+              <span style="font-size:0.82rem;color:#C9A84C;font-weight:700">20% — $700,000</span>
+            </div>
+            <input type="range" min="10" max="50" value="20" style="width:100%;accent-color:#C9A84C" />
+            <div style="display:flex;justify-content:space-between;margin-top:0.4rem">
+              <span style="font-size:0.72rem;color:#6B7280">10%</span>
+              <span style="font-size:0.72rem;color:#6B7280">50%</span>
+            </div>
+          </div>
+
+          <div>
+            <label style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:#9CA3AF;display:block;margin-bottom:0.5rem">Loan Term</label>
+            <div style="display:flex;gap:0.5rem">
+              <button style="flex:1;background:#C9A84C;color:#0A1628;border:none;padding:0.75rem;border-radius:6px;font-size:0.82rem;font-weight:700;cursor:pointer">30 Years</button>
+              <button style="flex:1;background:rgba(255,255,255,0.06);color:#9CA3AF;border:1px solid rgba(255,255,255,0.08);padding:0.75rem;border-radius:6px;font-size:0.82rem;font-weight:600;cursor:pointer">20 Years</button>
+              <button style="flex:1;background:rgba(255,255,255,0.06);color:#9CA3AF;border:1px solid rgba(255,255,255,0.08);padding:0.75rem;border-radius:6px;font-size:0.82rem;font-weight:600;cursor:pointer">15 Years</button>
+            </div>
+          </div>
+
+          <div>
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.5rem">
+              <label style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:#9CA3AF">Interest Rate</label>
+              <span style="font-size:0.82rem;color:#C9A84C;font-weight:700">6.75%</span>
+            </div>
+            <input type="range" min="3" max="12" step="0.25" value="6.75" style="width:100%;accent-color:#C9A84C" />
+            <div style="display:flex;justify-content:space-between;margin-top:0.4rem">
+              <span style="font-size:0.72rem;color:#6B7280">3%</span>
+              <span style="font-size:0.72rem;color:#6B7280">12%</span>
+            </div>
+          </div>
+
+          <div>
+            <label style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:#9CA3AF;display:block;margin-bottom:0.5rem">Annual Property Tax</label>
+            <div style="position:relative">
+              <span style="position:absolute;left:1rem;top:50%;transform:translateY(-50%);color:#C9A84C;font-weight:700">$</span>
+              <input type="number" value="42000" style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:6px;padding:0.875rem 1rem 0.875rem 2rem;color:#FFFFFF;font-size:0.9rem;outline:none;width:100%;box-sizing:border-box" />
+            </div>
+          </div>
+
+          <div>
+            <label style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;color:#9CA3AF;display:block;margin-bottom:0.5rem">Monthly HOA / Insurance</label>
+            <div style="position:relative">
+              <span style="position:absolute;left:1rem;top:50%;transform:translateY(-50%);color:#C9A84C;font-weight:700">$</span>
+              <input type="number" value="1200" style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:6px;padding:0.875rem 1rem 0.875rem 2rem;color:#FFFFFF;font-size:0.9rem;outline:none;width:100%;box-sizing:border-box" />
+            </div>
+          </div>
+
+          <button style="background:#C9A84C;color:#0A1628;border:none;padding:1.1rem;border-radius:6px;font-size:0.85rem;font-weight:700;text-transform:uppercase;letter-spacing:0.12em;cursor:pointer;width:100%">Calculate Payment</button>
+        </div>
+      </div>
+
+      <!-- Results -->
+      <div>
+        <!-- Main result -->
+        <div style="background:linear-gradient(135deg,#112240,#1E3A5F);border:1px solid rgba(201,168,76,0.15);border-radius:16px;padding:2.5rem;margin-bottom:1.5rem;text-align:center">
+          <p style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.2em;color:#C9A84C;margin-bottom:1rem">Estimated Monthly Payment</p>
+          <p style="font-family:var(--wp--preset--font-family--playfair);font-size:3.5rem;font-weight:700;color:#FFFFFF;margin:0;line-height:1">$19,847</p>
+          <p style="font-size:0.82rem;color:#9CA3AF;margin-top:0.75rem">Based on $2,800,000 loan at 6.75% for 30 years</p>
+        </div>
+
+        <!-- Breakdown -->
+        <div style="background:#112240;border:1px solid rgba(201,168,76,0.08);border-radius:16px;padding:2rem;margin-bottom:1.5rem">
+          <h3 style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.15em;color:#9CA3AF;margin-bottom:1.25rem">Payment Breakdown</h3>
+          <div style="display:flex;flex-direction:column;gap:0.875rem">
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <div style="display:flex;align-items:center;gap:0.75rem"><div style="width:12px;height:12px;background:#C9A84C;border-radius:2px"></div><span style="font-size:0.875rem;color:#9CA3AF">Principal &amp; Interest</span></div>
+              <span style="font-size:0.875rem;font-weight:700;color:#FFFFFF">$18,147</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <div style="display:flex;align-items:center;gap:0.75rem"><div style="width:12px;height:12px;background:#2C5282;border-radius:2px"></div><span style="font-size:0.875rem;color:#9CA3AF">Property Tax</span></div>
+              <span style="font-size:0.875rem;font-weight:700;color:#FFFFFF">$3,500</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <div style="display:flex;align-items:center;gap:0.75rem"><div style="width:12px;height:12px;background:#1E3A5F;border-radius:2px"></div><span style="font-size:0.875rem;color:#9CA3AF">HOA &amp; Insurance</span></div>
+              <span style="font-size:0.875rem;font-weight:700;color:#FFFFFF">$1,200</span>
+            </div>
+            <div style="height:1px;background:rgba(255,255,255,0.06)"></div>
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <span style="font-size:0.875rem;font-weight:700;color:#FFFFFF">Total Monthly</span>
+              <span style="font-size:1.05rem;font-weight:700;color:#C9A84C">$22,847</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <div style="background:#112240;border:1px solid rgba(201,168,76,0.08);border-radius:16px;padding:2rem">
+          <p style="font-size:0.875rem;color:#9CA3AF;margin-bottom:1.25rem">Ready to explore financing? Our mortgage partners specialize in luxury property loans.</p>
+          <a href="/contact?inquiry=mortgage" style="display:block;background:#C9A84C;color:#0A1628;padding:0.875rem;border-radius:6px;font-size:0.82rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;text-decoration:none;text-align:center">Speak with a Mortgage Advisor</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /wp:group -->
+
+</main>
+<!-- /wp:group -->
+<!-- wp:template-part {"slug":"footer-v1","tagName":"footer"} /-->
