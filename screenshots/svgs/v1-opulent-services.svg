@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="1440" height="900" style="font-family:Georgia, serif">
+  <defs><linearGradient id="imggrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1E3A5F"/><stop offset="100%" stop-color="#2C5282"/></linearGradient></defs>
+  <rect width="1440" height="900" fill="#0A1628"/>
+  <rect x="0" y="0" width="1440" height="60" fill="#050D1A"/>
+  <text x="40" y="38" fill="#C9A84C" font-size="18" font-weight="bold" font-family="Georgia,serif">LUXEESTATE</text>
+  <rect x="1288" y="14" width="120" height="32" fill="#C9A84C"/>
+  <text x="1326" y="34" fill="#0A1628" font-size="13" font-weight="bold">Contact</text>
+  <rect x="0" y="60" width="1440" height="4" fill="#C9A84C"/>
+  <rect x="0" y="64" width="1440" height="100" fill="#112240"/>
+  <text x="60" y="96" fill="#C9A84C" font-size="11" font-weight="bold">OUR SERVICES</text>
+  <text x="60" y="130" fill="#FFFFFF" font-size="26" font-weight="bold" font-family="Georgia,serif">Everything You Need to Buy, Sell &amp; Invest</text>
+  <rect x="40" y="180" width="420" height="160" fill="#112240"/>
+  <text x="98" y="210" fill="#FFFFFF" font-size="14" font-weight="bold">Buyer Representation</text>
+  <text x="56" y="238" fill="#9CA3AF" font-size="11">Full-service advisory from search to closing.</text>
+  <text x="56" y="256" fill="#C9A84C" font-size="11" font-weight="bold">Learn More →</text>
+  <rect x="488" y="180" width="420" height="160" fill="#112240"/>
+  <text x="546" y="210" fill="#FFFFFF" font-size="14" font-weight="bold">Seller Representation</text>
+  <text x="504" y="238" fill="#9CA3AF" font-size="11">Elite marketing and record-setting sale prices</text>
+  <text x="504" y="256" fill="#C9A84C" font-size="11" font-weight="bold">Learn More →</text>
+  <rect x="936" y="180" width="420" height="160" fill="#112240"/>
+  <text x="994" y="210" fill="#FFFFFF" font-size="14" font-weight="bold">International Services</text>
+  <text x="952" y="238" fill="#9CA3AF" font-size="11">FIRPTA guidance, multilingual advisors.</text>
+  <text x="952" y="256" fill="#C9A84C" font-size="11" font-weight="bold">Learn More →</text>
+  <rect x="40" y="358" width="420" height="160" fill="#112240"/>
+  <text x="98" y="388" fill="#FFFFFF" font-size="14" font-weight="bold">Market Analysis</text>
+  <text x="56" y="416" fill="#9CA3AF" font-size="11">Reports, pricing strategy, due diligence.</text>
+  <text x="56" y="434" fill="#C9A84C" font-size="11" font-weight="bold">Learn More →</text>
+  <rect x="488" y="358" width="420" height="160" fill="#112240"/>
+  <text x="546" y="388" fill="#FFFFFF" font-size="14" font-weight="bold">New Development</text>
+  <text x="504" y="416" fill="#9CA3AF" font-size="11">Pre-construction access and unit selection.</text>
+  <text x="504" y="434" fill="#C9A84C" font-size="11" font-weight="bold">Learn More →</text>
+  <rect x="936" y="358" width="420" height="160" fill="#112240"/>
+  <text x="994" y="388" fill="#FFFFFF" font-size="14" font-weight="bold">Property Management</text>
+  <text x="952" y="416" fill="#9CA3AF" font-size="11">Full-service investment property management.</text>
+  <text x="952" y="434" fill="#C9A84C" font-size="11" font-weight="bold">Learn More →</text>
+  <rect x="0" y="868" width="1440" height="32" fill="#050D1A"/>
+  <text x="16" y="888" fill="#C9A84C" font-size="11" font-weight="bold">SERVICES PAGE</text>
+  <text x="1251" y="888" fill="#9CA3AF" font-size="10">page-services-v1/v2/v3.html</text>
+</svg>

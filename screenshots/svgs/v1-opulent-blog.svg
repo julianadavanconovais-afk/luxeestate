@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="1440" height="900" style="font-family:Georgia, serif">
+  <defs><linearGradient id="imggrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1E3A5F"/><stop offset="100%" stop-color="#2C5282"/></linearGradient></defs>
+  <rect width="1440" height="900" fill="#0A1628"/>
+  <rect x="0" y="0" width="1440" height="60" fill="#050D1A"/>
+  <text x="40" y="38" fill="#C9A84C" font-size="18" font-weight="bold" font-family="Georgia,serif">LUXEESTATE</text>
+  <rect x="1288" y="14" width="120" height="32" fill="#C9A84C"/>
+  <text x="1326" y="34" fill="#0A1628" font-size="13" font-weight="bold">Contact</text>
+  <rect x="0" y="60" width="1440" height="4" fill="#C9A84C"/>
+  <rect x="0" y="64" width="1440" height="76" fill="#112240"/>
+  <text x="60" y="90" fill="#C9A84C" font-size="11" font-weight="bold">MARKET INTELLIGENCE</text>
+  <text x="60" y="118" fill="#FFFFFF" font-size="26" font-weight="bold" font-family="Georgia,serif">The LuxeEstate Blog</text>
+  <rect x="40" y="152" width="860" height="230" fill="url(#imggrad)"/>
+  <text x="470" y="272" fill="rgba(255,255,255,0.4)" font-size="12" text-anchor="middle">Featured Article Hero Image</text>
+  <rect x="40" y="312" width="860" height="70" fill="#050D1A"/>
+  <text x="58" y="334" fill="#C9A84C" font-size="10" font-weight="bold">MARKET REPORT · Mar 20, 2026</text>
+  <text x="58" y="356" fill="#FFFFFF" font-size="16" font-weight="bold" font-family="Georgia,serif">Waterfront Records: Miami Beach Prices Hit All-Time High</text>
+  <rect x="920" y="152" width="500" height="230" fill="#112240"/>
+  <text x="936" y="172" fill="#C9A84C" font-size="10" font-weight="bold">TRENDING</text>
+  <text x="936" y="212" fill="#FFFFFF" font-size="12" font-weight="bold">Star Island Sells for $85M</text>
+  <text x="936" y="270" fill="#FFFFFF" font-size="12" font-weight="bold">Brickell Penthouses Surge 22%</text>
+  <text x="936" y="328" fill="#FFFFFF" font-size="12" font-weight="bold">Off-Market Guide 2026</text>
+  <text x="40" y="408" fill="#FFFFFF" font-size="20" font-weight="bold" font-family="Georgia,serif">Latest Articles</text>
+  <rect x="40" y="438" width="446" height="140" fill="url(#imggrad)"/>
+  <rect x="40" y="578" width="446" height="90" fill="#112240"/>
+  <text x="52" y="598" fill="#C9A84C" font-size="10" font-weight="bold">Neighborhood · 4 min</text>
+  <text x="52" y="618" fill="#FFFFFF" font-size="13" font-weight="bold" font-family="Georgia,serif">Miami Beach Market Report Q1</text>
+  <rect x="506" y="438" width="446" height="140" fill="url(#imggrad)"/>
+  <rect x="506" y="578" width="446" height="90" fill="#112240"/>
+  <text x="518" y="618" fill="#FFFFFF" font-size="13" font-weight="bold" font-family="Georgia,serif">Buying Guide: Off-Market Miami</text>
+  <rect x="972" y="438" width="446" height="140" fill="url(#imggrad)"/>
+  <rect x="972" y="578" width="446" height="90" fill="#112240"/>
+  <text x="984" y="618" fill="#FFFFFF" font-size="13" font-weight="bold" font-family="Georgia,serif">Top 10 Waterfront Estates 2026</text>
+  <rect x="0" y="868" width="1440" height="32" fill="#050D1A"/>
+  <text x="16" y="888" fill="#C9A84C" font-size="11" font-weight="bold">BLOG LISTING</text>
+  <text x="1279" y="888" fill="#9CA3AF" font-size="10">page-blog-v1/v2/v3.html</text>
+</svg>

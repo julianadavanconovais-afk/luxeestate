@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="1440" height="900" style="font-family:Georgia, serif">
+  <defs><linearGradient id="imggrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1E3A5F"/><stop offset="100%" stop-color="#2C5282"/></linearGradient></defs>
+  <rect width="1440" height="900" fill="#0A1628"/>
+  <rect x="0" y="0" width="1440" height="60" fill="#050D1A"/>
+  <text x="40" y="38" fill="#C9A84C" font-size="18" font-weight="bold" font-family="Georgia,serif">LUXEESTATE</text>
+  <rect x="1288" y="14" width="120" height="32" fill="#C9A84C"/>
+  <text x="1326" y="34" fill="#0A1628" font-size="13" font-weight="bold">Contact</text>
+  <rect x="0" y="0" width="1440" height="310" fill="url(#imggrad)"/>
+  <rect x="0" y="0" width="1440" height="4" fill="#C9A84C"/>
+  <text x="60" y="100" fill="#C9A84C" font-size="10" font-weight="bold">NEIGHBORHOOD GUIDE</text>
+  <text x="60" y="160" fill="#FFFFFF" font-size="52" font-weight="bold" font-family="Georgia,serif">Miami Beach</text>
+  <text x="60" y="220" fill="rgba(255,255,255,0.7)" font-size="16">Waterfront Luxury Living</text>
+  <rect x="0" y="310" width="1440" height="76" fill="#050D1A"/>
+  <text x="60" y="346" fill="#C9A84C" font-size="26" font-weight="bold" font-family="Georgia,serif">218</text>
+  <text x="60" y="366" fill="#9CA3AF" font-size="11">Active Listings</text>
+  <text x="408" y="346" fill="#C9A84C" font-size="26" font-weight="bold" font-family="Georgia,serif">$8.1M</text>
+  <text x="408" y="366" fill="#9CA3AF" font-size="11">Avg Price</text>
+  <text x="756" y="346" fill="#C9A84C" font-size="26" font-weight="bold" font-family="Georgia,serif">41%</text>
+  <text x="756" y="366" fill="#9CA3AF" font-size="11">YoY Growth</text>
+  <text x="60" y="422" fill="#FFFFFF" font-size="20" font-weight="bold" font-family="Georgia,serif">About Miami Beach</text>
+  <text x="60" y="454" fill="#9CA3AF" font-size="12">Miami Beach is South Florida's crown jewel — a barrier island renowned for its iconic Art Deco architecture, world-class dining, and pristine Atlantic shoreline.</text>
+  <rect x="700" y="410" width="720" height="290" fill="url(#imggrad)"/>
+  <text x="1060" y="560" fill="rgba(255,255,255,0.4)" font-size="12" text-anchor="middle">Interactive Map</text>
+  <text x="60" y="724" fill="#FFFFFF" font-size="18" font-weight="bold" font-family="Georgia,serif">Featured Listings</text>
+  <rect x="40" y="750" width="428" height="126" fill="#112240"/>
+  <rect x="40" y="750" width="428" height="63" fill="url(#imggrad)"/>
+  <text x="52" y="827" fill="#C9A84C" font-size="10" font-weight="bold">Waterfront · Miami Beach</text>
+  <text x="52" y="845" fill="#FFFFFF" font-size="13" font-weight="bold" font-family="Georgia,serif">1 Star Island Dr</text>
+  <text x="52" y="865" fill="#FFFFFF" font-size="15" font-weight="bold">$28,500,000</text>
+  <rect x="0" y="868" width="1440" height="32" fill="#050D1A"/>
+  <text x="16" y="888" fill="#C9A84C" font-size="11" font-weight="bold">SINGLE NEIGHBORHOOD</text>
+  <text x="1209" y="888" fill="#9CA3AF" font-size="10">single-neighborhood-v1/v2/v3.html</text>
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="1440" height="900" style="font-family:Georgia, serif">
+  <defs><linearGradient id="imggrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1E3A5F"/><stop offset="100%" stop-color="#2C5282"/></linearGradient></defs>
+  <rect width="1440" height="900" fill="#0A1628"/>
+  <rect x="0" y="0" width="1440" height="60" fill="#050D1A"/>
+  <text x="40" y="38" fill="#C9A84C" font-size="18" font-weight="bold" font-family="Georgia,serif">LUXEESTATE</text>
+  <rect x="1288" y="14" width="120" height="32" fill="#C9A84C"/>
+  <text x="1326" y="34" fill="#0A1628" font-size="13" font-weight="bold">Contact</text>
+  <rect x="0" y="60" width="1440" height="4" fill="#C9A84C"/>
+  <rect x="0" y="64" width="1440" height="76" fill="#112240"/>
+  <text x="60" y="88" fill="#C9A84C" font-size="11" font-weight="bold">Search Results</text>
+  <rect x="60" y="106" width="900" height="36" fill="#112240" stroke="rgba(255,255,255,0.12)" stroke-width="1" rx="4"/>
+  <text x="72" y="129" fill="#9CA3AF" font-size="12">Waterfront homes Miami Beach</text>
+  <rect x="982" y="108" width="110" height="36" fill="#C9A84C" rx="3"/>
+  <text x="1037" y="131" fill="#0A1628" font-size="12" font-weight="bold" text-anchor="middle">Search</text>
+  <rect x="40" y="160" width="240" height="700" fill="#112240"/>
+  <text x="56" y="182" fill="#C9A84C" font-size="10" font-weight="bold">REFINE RESULTS</text>
+  <text x="56" y="210" fill="#9CA3AF" font-size="12">Properties (38)</text>
+  <text x="56" y="234" fill="#9CA3AF" font-size="12">Neighborhoods (4)</text>
+  <text x="56" y="258" fill="#9CA3AF" font-size="12">Articles (5)</text>
+  <rect x="296" y="162" width="1124" height="120" fill="#112240"/>
+  <rect x="296" y="162" width="150" height="120" fill="url(#imggrad)"/>
+  <text x="464" y="180" fill="#C9A84C" font-size="10" font-weight="bold">Waterfront Estate · Miami Beach</text>
+  <text x="464" y="202" fill="#FFFFFF" font-size="14" font-weight="bold" font-family="Georgia,serif">1 Star Island Dr</text>
+  <text x="464" y="230" fill="#FFFFFF" font-size="14" font-weight="bold">$28,500,000</text>
+  <rect x="296" y="292" width="1124" height="120" fill="#112240"/>
+  <rect x="296" y="292" width="150" height="120" fill="url(#imggrad)"/>
+  <text x="464" y="310" fill="#C9A84C" font-size="10" font-weight="bold">Villa · Venetian Islands</text>
+  <text x="464" y="332" fill="#FFFFFF" font-size="14" font-weight="bold" font-family="Georgia,serif">404 W Rivo Alto Dr</text>
+  <text x="464" y="360" fill="#FFFFFF" font-size="14" font-weight="bold">$9,750,000</text>
+  <rect x="296" y="422" width="1124" height="120" fill="#112240"/>
+  <rect x="296" y="422" width="150" height="120" fill="url(#imggrad)"/>
+  <text x="464" y="440" fill="#C9A84C" font-size="10" font-weight="bold">Estate · Coconut Grove</text>
+  <text x="464" y="462" fill="#FFFFFF" font-size="14" font-weight="bold" font-family="Georgia,serif">3290 Royal Road</text>
+  <text x="464" y="490" fill="#FFFFFF" font-size="14" font-weight="bold">$14,200,000</text>
+  <rect x="0" y="868" width="1440" height="32" fill="#050D1A"/>
+  <text x="16" y="888" fill="#C9A84C" font-size="11" font-weight="bold">SEARCH RESULTS</text>
+  <text x="1300" y="888" fill="#9CA3AF" font-size="10">search-v1/v2/v3.html</text>
+</svg>

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="1440" height="900" style="font-family:Georgia, serif">
+  <defs><linearGradient id="imggrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1E3A5F"/><stop offset="100%" stop-color="#2C5282"/></linearGradient></defs>
+  <rect width="1440" height="900" fill="#0A1628"/>
+  <rect x="0" y="0" width="1440" height="60" fill="#050D1A"/>
+  <text x="40" y="38" fill="#C9A84C" font-size="18" font-weight="bold" font-family="Georgia,serif">LUXEESTATE</text>
+  <rect x="1288" y="14" width="120" height="32" fill="#C9A84C"/>
+  <text x="1326" y="34" fill="#0A1628" font-size="13" font-weight="bold">Contact</text>
+  <rect x="0" y="60" width="1440" height="4" fill="#C9A84C"/>
+  <rect x="0" y="64" width="720" height="340" fill="#112240"/>
+  <text x="60" y="100" fill="#C9A84C" font-size="11" font-weight="bold">ABOUT LUXEESTATE</text>
+  <text x="60" y="134" fill="#FFFFFF" font-size="38" font-weight="bold" font-family="Georgia,serif">Miami's Premier</text>
+  <text x="60" y="180" fill="#FFFFFF" font-size="38" font-weight="bold" font-family="Georgia,serif">Luxury Real Estate</text>
+  <text x="60" y="226" fill="#FFFFFF" font-size="38" font-weight="bold" font-family="Georgia,serif">Advisory Firm</text>
+  <text x="60" y="278" fill="#9CA3AF" font-size="13">Founded in 2001, representing the most distinguished properties across South Florida for 25 years.</text>
+  <rect x="720" y="64" width="720" height="340" fill="url(#imggrad)"/>
+  <text x="1080" y="239" fill="rgba(255,255,255,0.4)" font-size="12" text-anchor="middle">Team Photo</text>
+  <rect x="0" y="420" width="1440" height="76" fill="#050D1A"/>
+  <text x="60" y="458" fill="#C9A84C" font-size="26" font-weight="bold" font-family="Georgia,serif">$4.8B+</text>
+  <text x="60" y="478" fill="#9CA3AF" font-size="11">Transactions</text>
+  <text x="408" y="458" fill="#C9A84C" font-size="26" font-weight="bold" font-family="Georgia,serif">25 yrs</text>
+  <text x="408" y="478" fill="#9CA3AF" font-size="11">In Business</text>
+  <text x="756" y="458" fill="#C9A84C" font-size="26" font-weight="bold" font-family="Georgia,serif">1,200+</text>
+  <text x="756" y="478" fill="#9CA3AF" font-size="11">Homes Sold</text>
+  <text x="1104" y="458" fill="#C9A84C" font-size="26" font-weight="bold" font-family="Georgia,serif">3</text>
+  <text x="1104" y="478" fill="#9CA3AF" font-size="11">Offices</text>
+  <text x="60" y="524" fill="#FFFFFF" font-size="22" font-weight="bold" font-family="Georgia,serif">Senior Leadership</text>
+  <circle cx="120" cy="600" r="56" fill="#1E3A5F"/>
+  <text x="60" y="676" fill="#FFFFFF" font-size="13" font-weight="bold">Alexandra Thornton</text>
+  <text x="60" y="696" fill="#C9A84C" font-size="11">Managing Director</text>
+  <circle cx="578" cy="600" r="56" fill="#2C5282"/>
+  <text x="518" y="676" fill="#FFFFFF" font-size="13" font-weight="bold">Marcus DeVere</text>
+  <text x="518" y="696" fill="#C9A84C" font-size="11">Head of Sales</text>
+  <circle cx="1036" cy="600" r="56" fill="#163054"/>
+  <text x="976" y="676" fill="#FFFFFF" font-size="13" font-weight="bold">Isabelle Fontaine</text>
+  <text x="976" y="696" fill="#C9A84C" font-size="11">International Director</text>
+  <rect x="0" y="868" width="1440" height="32" fill="#050D1A"/>
+  <text x="16" y="888" fill="#C9A84C" font-size="11" font-weight="bold">ABOUT PAGE</text>
+  <text x="1272" y="888" fill="#9CA3AF" font-size="10">page-about-v1/v2/v3.html</text>
+</svg>

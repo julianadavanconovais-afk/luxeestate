@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="1440" height="900" style="font-family:Georgia, serif">
+  <defs>
+    <linearGradient id="imggrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1E3A5F"/>
+      <stop offset="100%" stop-color="#2C5282"/>
+    </linearGradient>
+    <linearGradient id="herograd" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1E3A5F"/>
+      <stop offset="100%" stop-color="#0A1628"/>
+    </linearGradient>
+  </defs>
+  <rect width="1440" height="900" fill="#0A1628"/>
+  <rect x="0" y="0" width="1440" height="60" fill="#050D1A"/>
+  <text x="40" y="38" fill="#C9A84C" font-size="18" font-weight="bold" font-family="Georgia,serif">LUXE</text>
+  <text x="88" y="38" fill="#FFFFFF" font-size="18" font-weight="bold" font-family="Georgia,serif">ESTATE</text>
+  <text x="240" y="36" fill="#9CA3AF" font-size="13">Properties</text>
+  <text x="344" y="36" fill="#9CA3AF" font-size="13">Neighborhoods</text>
+  <text x="472" y="36" fill="#9CA3AF" font-size="13">Agents</text>
+  <text x="544" y="36" fill="#9CA3AF" font-size="13">About</text>
+  <text x="608" y="36" fill="#9CA3AF" font-size="13">Blog</text>
+  <rect x="1288" y="14" width="120" height="32" fill="#C9A84C"/>
+  <text x="1326" y="34" fill="#0A1628" font-size="13" font-weight="bold">Contact</text>
+  <line x1="0" y1="60" x2="1440" y2="60" stroke="#C9A84C" stroke-width="1" opacity="0.3"/>
+  <rect x="0" y="60" width="1440" height="4" fill="#C9A84C"/>
+  <rect x="0" y="64" width="720" height="800" fill="#112240"/>
+  <text x="60" y="110" fill="#C9A84C" font-size="11" font-weight="bold">Error 404</text>
+  <text x="60" y="158" fill="#FFFFFF" font-size="56" font-weight="bold" font-family="Georgia,serif">Page Not</text>
+  <text x="60" y="224" fill="#FFFFFF" font-size="56" font-weight="bold" font-family="Georgia,serif">Found</text>
+  <text x="60" y="302" fill="#9CA3AF" font-size="12">The page you're looking for may have been sold, moved, or no longer exists.</text>
+  <rect x="60" y="364" width="185" height="42" fill="#C9A84C" rx="3"/>
+  <text x="152" y="390" fill="#0A1628" font-size="12" font-weight="bold" text-anchor="middle">Return Home</text>
+  <rect x="262" y="364" width="195" height="42" fill="#050D1A" rx="3"/>
+  <text x="359" y="390" fill="#C9A84C" font-size="12" font-weight="bold" text-anchor="middle">Browse Properties</text>
+  <rect x="740" y="80" width="680" height="600" fill="#112240"/>
+  <text x="760" y="106" fill="#C9A84C" font-size="10" font-weight="bold">SEARCH OUR LISTINGS</text>
+  <rect x="760" y="122" width="640" height="36" fill="#112240" stroke="rgba(255,255,255,0.12)" stroke-width="1" rx="4"/>
+  <text x="772" y="145" fill="#9CA3AF" font-size="12">Neighborhood, address...</text>
+  <rect x="760" y="170" width="640" height="40" fill="#C9A84C" rx="3"/>
+  <text x="1080" y="195" fill="#0A1628" font-size="12" font-weight="bold" text-anchor="middle">Search</text>
+  <rect x="0" y="868" width="1440" height="32" fill="#050D1A"/>
+  <text x="16" y="888" fill="#C9A84C" font-size="11" font-weight="bold">404 ERROR PAGE</text>
+  <text x="1321" y="888" fill="#9CA3AF" font-size="10">404-v1/v2/v3.html</text>
+</svg>
